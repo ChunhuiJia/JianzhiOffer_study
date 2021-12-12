@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/lesson9/Queue.h
+stack
+-
+exception
+-
+
+/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/lesson9/lesson9.cpp
+Queue.h
+/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/lesson9/Queue.h
+cstdio
+-
+
