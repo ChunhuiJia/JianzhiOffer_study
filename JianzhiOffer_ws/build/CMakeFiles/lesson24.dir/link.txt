@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -g  -rdynamic CMakeFiles/lesson24.dir/lesson24/lesson24.cpp.o CMakeFiles/lesson24.dir/Utilities/List.cpp.o  -o lesson24 

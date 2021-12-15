@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/Utilities/List.cpp
+List.h
+/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/Utilities/List.h
+stdio.h
+-
+stdlib.h
+-
+
+/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/Utilities/List.h
+
+/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/lesson24/lesson24.cpp
+cstdio
+-
+../Utilities/List.h
+/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/Utilities/List.h
+

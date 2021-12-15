@@ -17,4 +17,8 @@ add_executable(lesson6 lesson6/lesson6.cpp Utilities/List.cpp)
 add_executable(lesson7 lesson7/lesson7.cpp Utilities/BinaryTree.cpp)
 add_executable(lesson8 lesson8/lesson8.cpp)
 add_executable(lesson9 lesson9/lesson9.cpp)
+add_executable(lesson10_1 lesson10/lesson10_1.cpp)
+add_executable(lesson11 lesson11/lesson11.cpp)
+add_executable(lesson24 lesson24/lesson24.cpp Utilities/List.cpp)
+
 

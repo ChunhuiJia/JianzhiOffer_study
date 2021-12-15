@@ -60,302 +60,6 @@ CMAKE_SOURCE_DIR = /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws
 CMAKE_BINARY_DIR = /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/lesson9.dir
-
-# All Build rule for target.
-CMakeFiles/lesson9.dir/all:
-	$(MAKE) -f CMakeFiles/lesson9.dir/build.make CMakeFiles/lesson9.dir/depend
-	$(MAKE) -f CMakeFiles/lesson9.dir/build.make CMakeFiles/lesson9.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=19,20 "Built target lesson9"
-.PHONY : CMakeFiles/lesson9.dir/all
-
-# Include target in all.
-all: CMakeFiles/lesson9.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/lesson9.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson9.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
-.PHONY : CMakeFiles/lesson9.dir/rule
-
-# Convenience name for target.
-lesson9: CMakeFiles/lesson9.dir/rule
-
-.PHONY : lesson9
-
-# clean rule for target.
-CMakeFiles/lesson9.dir/clean:
-	$(MAKE) -f CMakeFiles/lesson9.dir/build.make CMakeFiles/lesson9.dir/clean
-.PHONY : CMakeFiles/lesson9.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/lesson9.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/lesson8.dir
-
-# All Build rule for target.
-CMakeFiles/lesson8.dir/all:
-	$(MAKE) -f CMakeFiles/lesson8.dir/build.make CMakeFiles/lesson8.dir/depend
-	$(MAKE) -f CMakeFiles/lesson8.dir/build.make CMakeFiles/lesson8.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=17,18 "Built target lesson8"
-.PHONY : CMakeFiles/lesson8.dir/all
-
-# Include target in all.
-all: CMakeFiles/lesson8.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/lesson8.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson8.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
-.PHONY : CMakeFiles/lesson8.dir/rule
-
-# Convenience name for target.
-lesson8: CMakeFiles/lesson8.dir/rule
-
-.PHONY : lesson8
-
-# clean rule for target.
-CMakeFiles/lesson8.dir/clean:
-	$(MAKE) -f CMakeFiles/lesson8.dir/build.make CMakeFiles/lesson8.dir/clean
-.PHONY : CMakeFiles/lesson8.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/lesson8.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/lesson7.dir
-
-# All Build rule for target.
-CMakeFiles/lesson7.dir/all:
-	$(MAKE) -f CMakeFiles/lesson7.dir/build.make CMakeFiles/lesson7.dir/depend
-	$(MAKE) -f CMakeFiles/lesson7.dir/build.make CMakeFiles/lesson7.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=14,15,16 "Built target lesson7"
-.PHONY : CMakeFiles/lesson7.dir/all
-
-# Include target in all.
-all: CMakeFiles/lesson7.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/lesson7.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson7.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
-.PHONY : CMakeFiles/lesson7.dir/rule
-
-# Convenience name for target.
-lesson7: CMakeFiles/lesson7.dir/rule
-
-.PHONY : lesson7
-
-# clean rule for target.
-CMakeFiles/lesson7.dir/clean:
-	$(MAKE) -f CMakeFiles/lesson7.dir/build.make CMakeFiles/lesson7.dir/clean
-.PHONY : CMakeFiles/lesson7.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/lesson7.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/lesson6.dir
-
-# All Build rule for target.
-CMakeFiles/lesson6.dir/all:
-	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/depend
-	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=11,12,13 "Built target lesson6"
-.PHONY : CMakeFiles/lesson6.dir/all
-
-# Include target in all.
-all: CMakeFiles/lesson6.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/lesson6.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson6.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
-.PHONY : CMakeFiles/lesson6.dir/rule
-
-# Convenience name for target.
-lesson6: CMakeFiles/lesson6.dir/rule
-
-.PHONY : lesson6
-
-# clean rule for target.
-CMakeFiles/lesson6.dir/clean:
-	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/clean
-.PHONY : CMakeFiles/lesson6.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/lesson6.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/lesson4.dir
-
-# All Build rule for target.
-CMakeFiles/lesson4.dir/all:
-	$(MAKE) -f CMakeFiles/lesson4.dir/build.make CMakeFiles/lesson4.dir/depend
-	$(MAKE) -f CMakeFiles/lesson4.dir/build.make CMakeFiles/lesson4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=7,8 "Built target lesson4"
-.PHONY : CMakeFiles/lesson4.dir/all
-
-# Include target in all.
-all: CMakeFiles/lesson4.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/lesson4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson4.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
-.PHONY : CMakeFiles/lesson4.dir/rule
-
-# Convenience name for target.
-lesson4: CMakeFiles/lesson4.dir/rule
-
-.PHONY : lesson4
-
-# clean rule for target.
-CMakeFiles/lesson4.dir/clean:
-	$(MAKE) -f CMakeFiles/lesson4.dir/build.make CMakeFiles/lesson4.dir/clean
-.PHONY : CMakeFiles/lesson4.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/lesson4.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/lesson3_2.dir
-
-# All Build rule for target.
-CMakeFiles/lesson3_2.dir/all:
-	$(MAKE) -f CMakeFiles/lesson3_2.dir/build.make CMakeFiles/lesson3_2.dir/depend
-	$(MAKE) -f CMakeFiles/lesson3_2.dir/build.make CMakeFiles/lesson3_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=5,6 "Built target lesson3_2"
-.PHONY : CMakeFiles/lesson3_2.dir/all
-
-# Include target in all.
-all: CMakeFiles/lesson3_2.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/lesson3_2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson3_2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
-.PHONY : CMakeFiles/lesson3_2.dir/rule
-
-# Convenience name for target.
-lesson3_2: CMakeFiles/lesson3_2.dir/rule
-
-.PHONY : lesson3_2
-
-# clean rule for target.
-CMakeFiles/lesson3_2.dir/clean:
-	$(MAKE) -f CMakeFiles/lesson3_2.dir/build.make CMakeFiles/lesson3_2.dir/clean
-.PHONY : CMakeFiles/lesson3_2.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/lesson3_2.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/lesson3_1.dir
-
-# All Build rule for target.
-CMakeFiles/lesson3_1.dir/all:
-	$(MAKE) -f CMakeFiles/lesson3_1.dir/build.make CMakeFiles/lesson3_1.dir/depend
-	$(MAKE) -f CMakeFiles/lesson3_1.dir/build.make CMakeFiles/lesson3_1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=3,4 "Built target lesson3_1"
-.PHONY : CMakeFiles/lesson3_1.dir/all
-
-# Include target in all.
-all: CMakeFiles/lesson3_1.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/lesson3_1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson3_1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
-.PHONY : CMakeFiles/lesson3_1.dir/rule
-
-# Convenience name for target.
-lesson3_1: CMakeFiles/lesson3_1.dir/rule
-
-.PHONY : lesson3_1
-
-# clean rule for target.
-CMakeFiles/lesson3_1.dir/clean:
-	$(MAKE) -f CMakeFiles/lesson3_1.dir/build.make CMakeFiles/lesson3_1.dir/clean
-.PHONY : CMakeFiles/lesson3_1.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/lesson3_1.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/lesson5.dir
-
-# All Build rule for target.
-CMakeFiles/lesson5.dir/all:
-	$(MAKE) -f CMakeFiles/lesson5.dir/build.make CMakeFiles/lesson5.dir/depend
-	$(MAKE) -f CMakeFiles/lesson5.dir/build.make CMakeFiles/lesson5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=9,10 "Built target lesson5"
-.PHONY : CMakeFiles/lesson5.dir/all
-
-# Include target in all.
-all: CMakeFiles/lesson5.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/lesson5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson5.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
-.PHONY : CMakeFiles/lesson5.dir/rule
-
-# Convenience name for target.
-lesson5: CMakeFiles/lesson5.dir/rule
-
-.PHONY : lesson5
-
-# clean rule for target.
-CMakeFiles/lesson5.dir/clean:
-	$(MAKE) -f CMakeFiles/lesson5.dir/build.make CMakeFiles/lesson5.dir/clean
-.PHONY : CMakeFiles/lesson5.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/lesson5.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/lesson1.dir
 
 # All Build rule for target.
@@ -389,6 +93,413 @@ CMakeFiles/lesson1.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/lesson1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lesson3_1.dir
+
+# All Build rule for target.
+CMakeFiles/lesson3_1.dir/all:
+	$(MAKE) -f CMakeFiles/lesson3_1.dir/build.make CMakeFiles/lesson3_1.dir/depend
+	$(MAKE) -f CMakeFiles/lesson3_1.dir/build.make CMakeFiles/lesson3_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=10,11 "Built target lesson3_1"
+.PHONY : CMakeFiles/lesson3_1.dir/all
+
+# Include target in all.
+all: CMakeFiles/lesson3_1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lesson3_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson3_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
+.PHONY : CMakeFiles/lesson3_1.dir/rule
+
+# Convenience name for target.
+lesson3_1: CMakeFiles/lesson3_1.dir/rule
+
+.PHONY : lesson3_1
+
+# clean rule for target.
+CMakeFiles/lesson3_1.dir/clean:
+	$(MAKE) -f CMakeFiles/lesson3_1.dir/build.make CMakeFiles/lesson3_1.dir/clean
+.PHONY : CMakeFiles/lesson3_1.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/lesson3_1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lesson3_2.dir
+
+# All Build rule for target.
+CMakeFiles/lesson3_2.dir/all:
+	$(MAKE) -f CMakeFiles/lesson3_2.dir/build.make CMakeFiles/lesson3_2.dir/depend
+	$(MAKE) -f CMakeFiles/lesson3_2.dir/build.make CMakeFiles/lesson3_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=12,13 "Built target lesson3_2"
+.PHONY : CMakeFiles/lesson3_2.dir/all
+
+# Include target in all.
+all: CMakeFiles/lesson3_2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lesson3_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson3_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
+.PHONY : CMakeFiles/lesson3_2.dir/rule
+
+# Convenience name for target.
+lesson3_2: CMakeFiles/lesson3_2.dir/rule
+
+.PHONY : lesson3_2
+
+# clean rule for target.
+CMakeFiles/lesson3_2.dir/clean:
+	$(MAKE) -f CMakeFiles/lesson3_2.dir/build.make CMakeFiles/lesson3_2.dir/clean
+.PHONY : CMakeFiles/lesson3_2.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/lesson3_2.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lesson4.dir
+
+# All Build rule for target.
+CMakeFiles/lesson4.dir/all:
+	$(MAKE) -f CMakeFiles/lesson4.dir/build.make CMakeFiles/lesson4.dir/depend
+	$(MAKE) -f CMakeFiles/lesson4.dir/build.make CMakeFiles/lesson4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=14,15 "Built target lesson4"
+.PHONY : CMakeFiles/lesson4.dir/all
+
+# Include target in all.
+all: CMakeFiles/lesson4.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lesson4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
+.PHONY : CMakeFiles/lesson4.dir/rule
+
+# Convenience name for target.
+lesson4: CMakeFiles/lesson4.dir/rule
+
+.PHONY : lesson4
+
+# clean rule for target.
+CMakeFiles/lesson4.dir/clean:
+	$(MAKE) -f CMakeFiles/lesson4.dir/build.make CMakeFiles/lesson4.dir/clean
+.PHONY : CMakeFiles/lesson4.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/lesson4.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lesson7.dir
+
+# All Build rule for target.
+CMakeFiles/lesson7.dir/all:
+	$(MAKE) -f CMakeFiles/lesson7.dir/build.make CMakeFiles/lesson7.dir/depend
+	$(MAKE) -f CMakeFiles/lesson7.dir/build.make CMakeFiles/lesson7.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=21,22,23 "Built target lesson7"
+.PHONY : CMakeFiles/lesson7.dir/all
+
+# Include target in all.
+all: CMakeFiles/lesson7.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lesson7.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson7.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
+.PHONY : CMakeFiles/lesson7.dir/rule
+
+# Convenience name for target.
+lesson7: CMakeFiles/lesson7.dir/rule
+
+.PHONY : lesson7
+
+# clean rule for target.
+CMakeFiles/lesson7.dir/clean:
+	$(MAKE) -f CMakeFiles/lesson7.dir/build.make CMakeFiles/lesson7.dir/clean
+.PHONY : CMakeFiles/lesson7.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/lesson7.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lesson5.dir
+
+# All Build rule for target.
+CMakeFiles/lesson5.dir/all:
+	$(MAKE) -f CMakeFiles/lesson5.dir/build.make CMakeFiles/lesson5.dir/depend
+	$(MAKE) -f CMakeFiles/lesson5.dir/build.make CMakeFiles/lesson5.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=16,17 "Built target lesson5"
+.PHONY : CMakeFiles/lesson5.dir/all
+
+# Include target in all.
+all: CMakeFiles/lesson5.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lesson5.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson5.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
+.PHONY : CMakeFiles/lesson5.dir/rule
+
+# Convenience name for target.
+lesson5: CMakeFiles/lesson5.dir/rule
+
+.PHONY : lesson5
+
+# clean rule for target.
+CMakeFiles/lesson5.dir/clean:
+	$(MAKE) -f CMakeFiles/lesson5.dir/build.make CMakeFiles/lesson5.dir/clean
+.PHONY : CMakeFiles/lesson5.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/lesson5.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lesson6.dir
+
+# All Build rule for target.
+CMakeFiles/lesson6.dir/all:
+	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/depend
+	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=18,19,20 "Built target lesson6"
+.PHONY : CMakeFiles/lesson6.dir/all
+
+# Include target in all.
+all: CMakeFiles/lesson6.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lesson6.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson6.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
+.PHONY : CMakeFiles/lesson6.dir/rule
+
+# Convenience name for target.
+lesson6: CMakeFiles/lesson6.dir/rule
+
+.PHONY : lesson6
+
+# clean rule for target.
+CMakeFiles/lesson6.dir/clean:
+	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/clean
+.PHONY : CMakeFiles/lesson6.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/lesson6.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lesson8.dir
+
+# All Build rule for target.
+CMakeFiles/lesson8.dir/all:
+	$(MAKE) -f CMakeFiles/lesson8.dir/build.make CMakeFiles/lesson8.dir/depend
+	$(MAKE) -f CMakeFiles/lesson8.dir/build.make CMakeFiles/lesson8.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=24,25 "Built target lesson8"
+.PHONY : CMakeFiles/lesson8.dir/all
+
+# Include target in all.
+all: CMakeFiles/lesson8.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lesson8.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson8.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
+.PHONY : CMakeFiles/lesson8.dir/rule
+
+# Convenience name for target.
+lesson8: CMakeFiles/lesson8.dir/rule
+
+.PHONY : lesson8
+
+# clean rule for target.
+CMakeFiles/lesson8.dir/clean:
+	$(MAKE) -f CMakeFiles/lesson8.dir/build.make CMakeFiles/lesson8.dir/clean
+.PHONY : CMakeFiles/lesson8.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/lesson8.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lesson9.dir
+
+# All Build rule for target.
+CMakeFiles/lesson9.dir/all:
+	$(MAKE) -f CMakeFiles/lesson9.dir/build.make CMakeFiles/lesson9.dir/depend
+	$(MAKE) -f CMakeFiles/lesson9.dir/build.make CMakeFiles/lesson9.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=26,27 "Built target lesson9"
+.PHONY : CMakeFiles/lesson9.dir/all
+
+# Include target in all.
+all: CMakeFiles/lesson9.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lesson9.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson9.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
+.PHONY : CMakeFiles/lesson9.dir/rule
+
+# Convenience name for target.
+lesson9: CMakeFiles/lesson9.dir/rule
+
+.PHONY : lesson9
+
+# clean rule for target.
+CMakeFiles/lesson9.dir/clean:
+	$(MAKE) -f CMakeFiles/lesson9.dir/build.make CMakeFiles/lesson9.dir/clean
+.PHONY : CMakeFiles/lesson9.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/lesson9.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lesson10_1.dir
+
+# All Build rule for target.
+CMakeFiles/lesson10_1.dir/all:
+	$(MAKE) -f CMakeFiles/lesson10_1.dir/build.make CMakeFiles/lesson10_1.dir/depend
+	$(MAKE) -f CMakeFiles/lesson10_1.dir/build.make CMakeFiles/lesson10_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=3,4 "Built target lesson10_1"
+.PHONY : CMakeFiles/lesson10_1.dir/all
+
+# Include target in all.
+all: CMakeFiles/lesson10_1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lesson10_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson10_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
+.PHONY : CMakeFiles/lesson10_1.dir/rule
+
+# Convenience name for target.
+lesson10_1: CMakeFiles/lesson10_1.dir/rule
+
+.PHONY : lesson10_1
+
+# clean rule for target.
+CMakeFiles/lesson10_1.dir/clean:
+	$(MAKE) -f CMakeFiles/lesson10_1.dir/build.make CMakeFiles/lesson10_1.dir/clean
+.PHONY : CMakeFiles/lesson10_1.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/lesson10_1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lesson11.dir
+
+# All Build rule for target.
+CMakeFiles/lesson11.dir/all:
+	$(MAKE) -f CMakeFiles/lesson11.dir/build.make CMakeFiles/lesson11.dir/depend
+	$(MAKE) -f CMakeFiles/lesson11.dir/build.make CMakeFiles/lesson11.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=5,6 "Built target lesson11"
+.PHONY : CMakeFiles/lesson11.dir/all
+
+# Include target in all.
+all: CMakeFiles/lesson11.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lesson11.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson11.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
+.PHONY : CMakeFiles/lesson11.dir/rule
+
+# Convenience name for target.
+lesson11: CMakeFiles/lesson11.dir/rule
+
+.PHONY : lesson11
+
+# clean rule for target.
+CMakeFiles/lesson11.dir/clean:
+	$(MAKE) -f CMakeFiles/lesson11.dir/build.make CMakeFiles/lesson11.dir/clean
+.PHONY : CMakeFiles/lesson11.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/lesson11.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lesson24.dir
+
+# All Build rule for target.
+CMakeFiles/lesson24.dir/all:
+	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/depend
+	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles --progress-num=7,8,9 "Built target lesson24"
+.PHONY : CMakeFiles/lesson24.dir/all
+
+# Include target in all.
+all: CMakeFiles/lesson24.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lesson24.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lesson24.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles 0
+.PHONY : CMakeFiles/lesson24.dir/rule
+
+# Convenience name for target.
+lesson24: CMakeFiles/lesson24.dir/rule
+
+.PHONY : lesson24
+
+# clean rule for target.
+CMakeFiles/lesson24.dir/clean:
+	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/clean
+.PHONY : CMakeFiles/lesson24.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/lesson24.dir/clean
 
 .PHONY : clean
 

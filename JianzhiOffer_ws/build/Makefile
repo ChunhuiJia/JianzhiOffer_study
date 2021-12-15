@@ -111,82 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lesson9
+# Target rules for targets named lesson1
 
 # Build rule for target.
-lesson9: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson9
-.PHONY : lesson9
+lesson1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson1
+.PHONY : lesson1
 
 # fast build rule for target.
-lesson9/fast:
-	$(MAKE) -f CMakeFiles/lesson9.dir/build.make CMakeFiles/lesson9.dir/build
-.PHONY : lesson9/fast
-
-#=============================================================================
-# Target rules for targets named lesson8
-
-# Build rule for target.
-lesson8: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson8
-.PHONY : lesson8
-
-# fast build rule for target.
-lesson8/fast:
-	$(MAKE) -f CMakeFiles/lesson8.dir/build.make CMakeFiles/lesson8.dir/build
-.PHONY : lesson8/fast
-
-#=============================================================================
-# Target rules for targets named lesson7
-
-# Build rule for target.
-lesson7: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson7
-.PHONY : lesson7
-
-# fast build rule for target.
-lesson7/fast:
-	$(MAKE) -f CMakeFiles/lesson7.dir/build.make CMakeFiles/lesson7.dir/build
-.PHONY : lesson7/fast
-
-#=============================================================================
-# Target rules for targets named lesson6
-
-# Build rule for target.
-lesson6: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson6
-.PHONY : lesson6
-
-# fast build rule for target.
-lesson6/fast:
-	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/build
-.PHONY : lesson6/fast
-
-#=============================================================================
-# Target rules for targets named lesson4
-
-# Build rule for target.
-lesson4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson4
-.PHONY : lesson4
-
-# fast build rule for target.
-lesson4/fast:
-	$(MAKE) -f CMakeFiles/lesson4.dir/build.make CMakeFiles/lesson4.dir/build
-.PHONY : lesson4/fast
-
-#=============================================================================
-# Target rules for targets named lesson3_2
-
-# Build rule for target.
-lesson3_2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson3_2
-.PHONY : lesson3_2
-
-# fast build rule for target.
-lesson3_2/fast:
-	$(MAKE) -f CMakeFiles/lesson3_2.dir/build.make CMakeFiles/lesson3_2.dir/build
-.PHONY : lesson3_2/fast
+lesson1/fast:
+	$(MAKE) -f CMakeFiles/lesson1.dir/build.make CMakeFiles/lesson1.dir/build
+.PHONY : lesson1/fast
 
 #=============================================================================
 # Target rules for targets named lesson3_1
@@ -202,6 +137,45 @@ lesson3_1/fast:
 .PHONY : lesson3_1/fast
 
 #=============================================================================
+# Target rules for targets named lesson3_2
+
+# Build rule for target.
+lesson3_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson3_2
+.PHONY : lesson3_2
+
+# fast build rule for target.
+lesson3_2/fast:
+	$(MAKE) -f CMakeFiles/lesson3_2.dir/build.make CMakeFiles/lesson3_2.dir/build
+.PHONY : lesson3_2/fast
+
+#=============================================================================
+# Target rules for targets named lesson4
+
+# Build rule for target.
+lesson4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson4
+.PHONY : lesson4
+
+# fast build rule for target.
+lesson4/fast:
+	$(MAKE) -f CMakeFiles/lesson4.dir/build.make CMakeFiles/lesson4.dir/build
+.PHONY : lesson4/fast
+
+#=============================================================================
+# Target rules for targets named lesson7
+
+# Build rule for target.
+lesson7: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson7
+.PHONY : lesson7
+
+# fast build rule for target.
+lesson7/fast:
+	$(MAKE) -f CMakeFiles/lesson7.dir/build.make CMakeFiles/lesson7.dir/build
+.PHONY : lesson7/fast
+
+#=============================================================================
 # Target rules for targets named lesson5
 
 # Build rule for target.
@@ -215,17 +189,82 @@ lesson5/fast:
 .PHONY : lesson5/fast
 
 #=============================================================================
-# Target rules for targets named lesson1
+# Target rules for targets named lesson6
 
 # Build rule for target.
-lesson1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson1
-.PHONY : lesson1
+lesson6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson6
+.PHONY : lesson6
 
 # fast build rule for target.
-lesson1/fast:
-	$(MAKE) -f CMakeFiles/lesson1.dir/build.make CMakeFiles/lesson1.dir/build
-.PHONY : lesson1/fast
+lesson6/fast:
+	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/build
+.PHONY : lesson6/fast
+
+#=============================================================================
+# Target rules for targets named lesson8
+
+# Build rule for target.
+lesson8: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson8
+.PHONY : lesson8
+
+# fast build rule for target.
+lesson8/fast:
+	$(MAKE) -f CMakeFiles/lesson8.dir/build.make CMakeFiles/lesson8.dir/build
+.PHONY : lesson8/fast
+
+#=============================================================================
+# Target rules for targets named lesson9
+
+# Build rule for target.
+lesson9: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson9
+.PHONY : lesson9
+
+# fast build rule for target.
+lesson9/fast:
+	$(MAKE) -f CMakeFiles/lesson9.dir/build.make CMakeFiles/lesson9.dir/build
+.PHONY : lesson9/fast
+
+#=============================================================================
+# Target rules for targets named lesson10_1
+
+# Build rule for target.
+lesson10_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson10_1
+.PHONY : lesson10_1
+
+# fast build rule for target.
+lesson10_1/fast:
+	$(MAKE) -f CMakeFiles/lesson10_1.dir/build.make CMakeFiles/lesson10_1.dir/build
+.PHONY : lesson10_1/fast
+
+#=============================================================================
+# Target rules for targets named lesson11
+
+# Build rule for target.
+lesson11: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson11
+.PHONY : lesson11
+
+# fast build rule for target.
+lesson11/fast:
+	$(MAKE) -f CMakeFiles/lesson11.dir/build.make CMakeFiles/lesson11.dir/build
+.PHONY : lesson11/fast
+
+#=============================================================================
+# Target rules for targets named lesson24
+
+# Build rule for target.
+lesson24: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson24
+.PHONY : lesson24
+
+# fast build rule for target.
+lesson24/fast:
+	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/build
+.PHONY : lesson24/fast
 
 Utilities/BinaryTree.o: Utilities/BinaryTree.cpp.o
 
@@ -261,6 +300,7 @@ Utilities/List.o: Utilities/List.cpp.o
 # target to build an object file
 Utilities/List.cpp.o:
 	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/Utilities/List.cpp.o
+	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/Utilities/List.cpp.o
 .PHONY : Utilities/List.cpp.o
 
 Utilities/List.i: Utilities/List.cpp.i
@@ -270,6 +310,7 @@ Utilities/List.i: Utilities/List.cpp.i
 # target to preprocess a source file
 Utilities/List.cpp.i:
 	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/Utilities/List.cpp.i
+	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/Utilities/List.cpp.i
 .PHONY : Utilities/List.cpp.i
 
 Utilities/List.s: Utilities/List.cpp.s
@@ -279,6 +320,7 @@ Utilities/List.s: Utilities/List.cpp.s
 # target to generate assembly for a file
 Utilities/List.cpp.s:
 	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/Utilities/List.cpp.s
+	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/Utilities/List.cpp.s
 .PHONY : Utilities/List.cpp.s
 
 lesson1/lesson1.o: lesson1/lesson1.cpp.o
@@ -307,6 +349,87 @@ lesson1/lesson1.s: lesson1/lesson1.cpp.s
 lesson1/lesson1.cpp.s:
 	$(MAKE) -f CMakeFiles/lesson1.dir/build.make CMakeFiles/lesson1.dir/lesson1/lesson1.cpp.s
 .PHONY : lesson1/lesson1.cpp.s
+
+lesson10/lesson10_1.o: lesson10/lesson10_1.cpp.o
+
+.PHONY : lesson10/lesson10_1.o
+
+# target to build an object file
+lesson10/lesson10_1.cpp.o:
+	$(MAKE) -f CMakeFiles/lesson10_1.dir/build.make CMakeFiles/lesson10_1.dir/lesson10/lesson10_1.cpp.o
+.PHONY : lesson10/lesson10_1.cpp.o
+
+lesson10/lesson10_1.i: lesson10/lesson10_1.cpp.i
+
+.PHONY : lesson10/lesson10_1.i
+
+# target to preprocess a source file
+lesson10/lesson10_1.cpp.i:
+	$(MAKE) -f CMakeFiles/lesson10_1.dir/build.make CMakeFiles/lesson10_1.dir/lesson10/lesson10_1.cpp.i
+.PHONY : lesson10/lesson10_1.cpp.i
+
+lesson10/lesson10_1.s: lesson10/lesson10_1.cpp.s
+
+.PHONY : lesson10/lesson10_1.s
+
+# target to generate assembly for a file
+lesson10/lesson10_1.cpp.s:
+	$(MAKE) -f CMakeFiles/lesson10_1.dir/build.make CMakeFiles/lesson10_1.dir/lesson10/lesson10_1.cpp.s
+.PHONY : lesson10/lesson10_1.cpp.s
+
+lesson11/lesson11.o: lesson11/lesson11.cpp.o
+
+.PHONY : lesson11/lesson11.o
+
+# target to build an object file
+lesson11/lesson11.cpp.o:
+	$(MAKE) -f CMakeFiles/lesson11.dir/build.make CMakeFiles/lesson11.dir/lesson11/lesson11.cpp.o
+.PHONY : lesson11/lesson11.cpp.o
+
+lesson11/lesson11.i: lesson11/lesson11.cpp.i
+
+.PHONY : lesson11/lesson11.i
+
+# target to preprocess a source file
+lesson11/lesson11.cpp.i:
+	$(MAKE) -f CMakeFiles/lesson11.dir/build.make CMakeFiles/lesson11.dir/lesson11/lesson11.cpp.i
+.PHONY : lesson11/lesson11.cpp.i
+
+lesson11/lesson11.s: lesson11/lesson11.cpp.s
+
+.PHONY : lesson11/lesson11.s
+
+# target to generate assembly for a file
+lesson11/lesson11.cpp.s:
+	$(MAKE) -f CMakeFiles/lesson11.dir/build.make CMakeFiles/lesson11.dir/lesson11/lesson11.cpp.s
+.PHONY : lesson11/lesson11.cpp.s
+
+lesson24/lesson24.o: lesson24/lesson24.cpp.o
+
+.PHONY : lesson24/lesson24.o
+
+# target to build an object file
+lesson24/lesson24.cpp.o:
+	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/lesson24/lesson24.cpp.o
+.PHONY : lesson24/lesson24.cpp.o
+
+lesson24/lesson24.i: lesson24/lesson24.cpp.i
+
+.PHONY : lesson24/lesson24.i
+
+# target to preprocess a source file
+lesson24/lesson24.cpp.i:
+	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/lesson24/lesson24.cpp.i
+.PHONY : lesson24/lesson24.cpp.i
+
+lesson24/lesson24.s: lesson24/lesson24.cpp.s
+
+.PHONY : lesson24/lesson24.s
+
+# target to generate assembly for a file
+lesson24/lesson24.cpp.s:
+	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/lesson24/lesson24.cpp.s
+.PHONY : lesson24/lesson24.cpp.s
 
 lesson3/lesson3_1.o: lesson3/lesson3_1.cpp.o
 
@@ -530,17 +653,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... lesson9"
-	@echo "... lesson8"
-	@echo "... lesson7"
-	@echo "... lesson6"
-	@echo "... lesson4"
-	@echo "... lesson3_2"
-	@echo "... lesson3_1"
-	@echo "... edit_cache"
-	@echo "... lesson5"
 	@echo "... lesson1"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... lesson3_1"
+	@echo "... lesson3_2"
+	@echo "... lesson4"
+	@echo "... lesson7"
+	@echo "... lesson5"
+	@echo "... lesson6"
+	@echo "... lesson8"
+	@echo "... lesson9"
+	@echo "... lesson10_1"
+	@echo "... lesson11"
+	@echo "... lesson24"
 	@echo "... Utilities/BinaryTree.o"
 	@echo "... Utilities/BinaryTree.i"
 	@echo "... Utilities/BinaryTree.s"
@@ -550,6 +676,15 @@ help:
 	@echo "... lesson1/lesson1.o"
 	@echo "... lesson1/lesson1.i"
 	@echo "... lesson1/lesson1.s"
+	@echo "... lesson10/lesson10_1.o"
+	@echo "... lesson10/lesson10_1.i"
+	@echo "... lesson10/lesson10_1.s"
+	@echo "... lesson11/lesson11.o"
+	@echo "... lesson11/lesson11.i"
+	@echo "... lesson11/lesson11.s"
+	@echo "... lesson24/lesson24.o"
+	@echo "... lesson24/lesson24.i"
+	@echo "... lesson24/lesson24.s"
 	@echo "... lesson3/lesson3_1.o"
 	@echo "... lesson3/lesson3_1.i"
 	@echo "... lesson3/lesson3_1.s"
