@@ -1,1 +1,1 @@
-/usr/bin/c++   -Wall -g  -rdynamic CMakeFiles/lesson5.dir/lesson5/lesson5.cpp.o  -o lesson5 
+/usr/bin/c++    -Wall -g   CMakeFiles/lesson5.dir/lesson5/lesson5.cpp.o  -o lesson5 -rdynamic 

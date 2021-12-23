@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/lesson9/Queue.h
+/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/lesson9/Queue.h
 stack
 -
 exception
 -
 
-/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/lesson9/lesson9.cpp
+/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/lesson9/lesson9.cpp
 Queue.h
-/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/lesson9/Queue.h
+/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/lesson9/Queue.h
 cstdio
 -
 

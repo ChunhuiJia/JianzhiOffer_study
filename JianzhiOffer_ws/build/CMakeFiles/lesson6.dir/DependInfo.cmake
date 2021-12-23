@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/Utilities/List.cpp" "/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles/lesson6.dir/Utilities/List.cpp.o"
-  "/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/lesson6/lesson6.cpp" "/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles/lesson6.dir/lesson6/lesson6.cpp.o"
+  "/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/Utilities/List.cpp" "/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles/lesson6.dir/Utilities/List.cpp.o"
+  "/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/lesson6/lesson6.cpp" "/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/build/CMakeFiles/lesson6.dir/lesson6/lesson6.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

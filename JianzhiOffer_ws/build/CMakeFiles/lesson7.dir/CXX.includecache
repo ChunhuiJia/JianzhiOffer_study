@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/Utilities/BinaryTree.cpp
+/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/Utilities/BinaryTree.cpp
 cstdio
 -
 BinaryTree.h
-/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/Utilities/BinaryTree.h
+/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/Utilities/BinaryTree.h
 
-/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/Utilities/BinaryTree.h
+/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/Utilities/BinaryTree.h
 
-/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/lesson7/lesson7.cpp
+/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/lesson7/lesson7.cpp
 ../Utilities/BinaryTree.h
-/home/novauto/Learn/JianzhiOffer_study/JianzhiOffer_ws/Utilities/BinaryTree.h
+/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/Utilities/BinaryTree.h
 exception
 -
 cstdio
