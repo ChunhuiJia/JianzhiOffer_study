@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/smartPointers/shellmad_17_1.cpp
+iostream
+-
+

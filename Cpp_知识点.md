@@ -199,3 +199,195 @@ push_back()是vector的方法
 ![image-20211215152846930](Cpp_知识点.assets/image-20211215152846930.png)
 
 ## 19.c++强制转换
+
+## 20.多态
+
+[参考链接：MOOC 郭炜](https://www.icourse163.org/learn/PKU-1002029030?tid=1465718464#/learn/content?type=detail&id=1245449007&sm=1)
+
+多态的表现形式一
+
+* 派生类的指针可以**赋给基类指针**。
+* **通过基类指针调用**基类和派生类中的同名**虚函数**时：
+
+​	(1) 若该指针指向一个基类的对象，那么被调用是基类的虚函数;
+
+​	(2) 若该指针指向一个派生类的对象，那么被调用的是派生类的虚函数
+
+这种机制就叫做 **“多态”**
+
+
+
+## 21.智能指针
+
+[有一套很好的课程(推荐学习)：shellmad-14_C++新特性 智能指针与RAII(连着好几集)](https://www.bilibili.com/video/BV1GK4y1s7qR?spm_id_from=333.999.0.0)
+
+用到的头文件 `#include <memory>` [参考链接：c++ memory 头文件详细介绍](https://blog.csdn.net/CHYabc123456hh/article/details/109350925)
+
+**.get()返回对象的地址**。
+
+### unique_ptr
+
+为什么会有unique_ptr？
+
+动态内存忘记delete，导致内存泄漏。比如：
+
+```cpp
+p = new();
+if(...)
+{
+	return;
+}
+delete p;
+```
+
+因此我们需要一种方式来解决这个问题，不管我们怎么折腾，能够避免内存不释放的问题。
+
+于是我们引入了auto_ptr，但目前auto_ptr有很多缺点，目前在c++11以上已经停用了。
+
+auto_ptr的进阶版unique_ptr就被引入进来。
+
+unique_ptr的特点：
+
+unique_ptr继承了auto_ptr的部分优点，对缺点进行改进。
+
+unique_ptr是一个独享所有权的智能指针，它提供了严格意义上的所有权，包括：
+
+特点1：拥有它指向的对象
+
+特点2：无法进行复制构造，无法进行复制赋值操作。即无法使两个unique_ptr指向同一个对象。但是可以进行**移动构造和移动赋值**操作
+
+特点3：保存指向某个对象的指针，当它本身被删除释放的时候，会**使用给定的删除器释放它指向的对象**
+
+官方文档：
+
+std::unique_ptr是**通过指针占有并管理另一对象**，并**在unique_ptr离开作用域时释放该对象的智能指针**。
+
+在下列两者之一发生时用关联的删除器释放对象：
+
+**销毁了管理**的**unique_ptr对象**
+
+通过`operator=`或`reset()` 赋值另一指针给管理的unique_ptr对象。
+
+通过调用get_delete()(ptr), 用潜在为用户提供的删除器释放对象。默认删除器用delete运算符，它销毁对象并分解分配内存。
+
+unique_ptr亦可以不占对象，该情况下称它为空(empty)。
+
+std::unique_ptr有两个版本：
+
+(1) 管理个对象(例如以new 分配)
+
+(2) 管理动态分配的对象数组 (例如以 new[] 分配)
+
+类满足可移动构造和可移动赋值的要求，但不满足可复制构造或可复制赋值的要求。
+
+总结起来就是：=或者reset都会转移unique_ptr的控制权，并调用析够函数。
+
+```cpp
+#include <iostream>
+#include <memory>
+
+class Mars
+{
+    public:
+    ~Mars()
+    {
+        std::cout << this << "~Mars" << std::endl;
+    }
+    void prin()
+    {
+        std::cout << this << ",I am Mars" << std::endl;
+    }
+};
+
+int main()
+{
+    {
+        Mars* mars = new Mars;
+        std::unique_ptr<Mars> pMars(mars);
+        std::cout << "pMars->prin:        ";
+        pMars->prin();
+        std::cout << "pMars.get()->prin:   ";
+        pMars.get()->prin();
+        std::cout << "(*pMars).prin:     ";
+        (*pMars).prin();
+
+        std::cout << "pMars:" << pMars.get() << std::endl;
+        pMars.reset(new Mars);
+        std::cout << "pMars.reset.prin:     ";
+        pMars->prin();
+
+        std::unique_ptr<Mars> pMars2;
+        pMars2 = std::move(pMars);
+        std::cout << "pMars2.move.prin:       ";
+        std::cout << "pMars2:" << pMars2.get() << std::endl;
+        pMars2->prin();
+    }
+
+    return 0;
+}
+```
+
+> .get()函数
+
+[参考链接: c++——智能指针学习（unique_ptr）](https://blog.csdn.net/weixin_30892763/article/details/97764534)
+
+[参考链接：官方文档std::unique_ptr](https://zh.cppreference.com/w/cpp/memory/unique_ptr)
+
+## 22.子类重写方法时可以不加virtual，推荐加override用于编译器检查
+
+不推荐在子类重写方法时加 virtual 。这并不能让读者意识到这是重写的方法，也无益于编译器的检查。 要指明这是重写的方法，应该用 override [参考链接：](https://bbs.csdn.net/topics/391901728)
+
+## 23.strlen()和sizeof()的区别
+
+[参考链接：C/C++中strlen的用法](https://blog.csdn.net/lht_521/article/details/105928323)
+
+strlen() 是string+length缩写，含义是字符串有多少个字符
+
+> strlen所做的仅仅是一个计数器的工作，它从内存的某个位置(可以是字符串开头，中间某个位置，甚至是某个不确定的内存区域)开始扫描，直到碰到第一个字符串结束符"\0"为止，然后返回计数器值。
+
+sizeof() 返回的是变量声明后所占的内存数，而不是实际长度
+
+## 24.C++中Struct与Class的区别与比较
+
+C++中Struct和Class很像，也有构造函数，成员函数之类的，什么publich,private的，区别还是有一些，比如struct的默认成员变量是public的，而Class默认成员变量是private的。
+
+[参考链接：C++中Struct与Class的区别与比较](https://blog.csdn.net/weixin_39640298/article/details/84349171)
+
+## 25.map
+
+map是STL的一个关联容器，它提供了一对一的hash。
+
+* 第一个可以称为关键字(key)，**每个关键字只能在map中出现一次**
+* 第二个可以称为该关键字的值(value)
+
+map以模板(泛型)方式实现，可以存储任意类型的数据，包括使用者自定义的数据类型。map主要用于资料一对一映射(one-to-one)的情况，**map内部的实现自建一颗红黑树**，这棵树具有对数据**自动排序**的功能。在map内部所有的数据都是有序的，后边我们会见识到有序的好处。比如一个班级中，每个学生的学号跟他的姓名就存在着一对一映射的关系。
+
+![image-20211226121036194](Cpp_知识点.assets/image-20211226121036194.png)
+
+[参考链接：C++ map用法总结](https://blog.csdn.net/weixin_42513339/article/details/89179655?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7Eessearch%7Evector-1.fixedcolumn&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7Eessearch%7Evector-1.fixedcolumn)
+
+## 26.=delete和=default
+
+=delete,表示禁止使用编译器默认生成的函数，禁止使用该函数
+
+=default, 表示无论程序员是否重载了该同名函数，都要求编译器生成一个默认函数，不使用=default，若程序员重载了该函数，则不会生成该函数的默认函数。
+
+[参考链接：C++中 =defaule 和 =delete 使用](https://blog.csdn.net/lmb1612977696/article/details/80035487)
+
+## 27.在A中加语句：friend class B
+
+能够让其他类**B，访问A中的成员变量**.
+
+[参考链接：C++中的friend class 用法总结](https://blog.csdn.net/weixin_38293850/article/details/80191242)
+
+## 28.explicit关键字
+
+explicit用来防止由构造函数定义的隐式转换
+
+[参考链接：C++中explicit关键字的作用](https://www.cnblogs.com/winnersun/archive/2011/07/16/2108440.html)
+
+## 29.段错误
+
+**段错误应该就是访问了不可访问的内存，这个内存要么是不存在的，要么是受系统保护的**。
+
+[参考链接：Segmentation Fault错误原因总结](https://blog.csdn.net/u010150046/article/details/77775114)

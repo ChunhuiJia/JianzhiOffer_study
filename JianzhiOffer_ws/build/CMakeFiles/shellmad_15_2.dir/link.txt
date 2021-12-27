@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -g   CMakeFiles/shellmad_15_2.dir/smartPointers/shellmad_15_2.cpp.o  -o shellmad_15_2 -rdynamic 

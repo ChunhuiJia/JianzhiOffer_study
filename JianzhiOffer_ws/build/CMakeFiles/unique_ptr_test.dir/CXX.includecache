@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/smartPointers/unique_ptr_test.cpp
+iostream
+-
+memory
+-
+

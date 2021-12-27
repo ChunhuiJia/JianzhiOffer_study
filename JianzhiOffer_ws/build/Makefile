@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,121 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lesson24
+# Target rules for targets named lesson9
 
 # Build rule for target.
-lesson24: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson24
-.PHONY : lesson24
+lesson9: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson9
+.PHONY : lesson9
 
 # fast build rule for target.
-lesson24/fast:
-	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/build
-.PHONY : lesson24/fast
-
-#=============================================================================
-# Target rules for targets named lesson11
-
-# Build rule for target.
-lesson11: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson11
-.PHONY : lesson11
-
-# fast build rule for target.
-lesson11/fast:
-	$(MAKE) -f CMakeFiles/lesson11.dir/build.make CMakeFiles/lesson11.dir/build
-.PHONY : lesson11/fast
-
-#=============================================================================
-# Target rules for targets named lesson4
-
-# Build rule for target.
-lesson4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson4
-.PHONY : lesson4
-
-# fast build rule for target.
-lesson4/fast:
-	$(MAKE) -f CMakeFiles/lesson4.dir/build.make CMakeFiles/lesson4.dir/build
-.PHONY : lesson4/fast
-
-#=============================================================================
-# Target rules for targets named lesson6
-
-# Build rule for target.
-lesson6: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson6
-.PHONY : lesson6
-
-# fast build rule for target.
-lesson6/fast:
-	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/build
-.PHONY : lesson6/fast
-
-#=============================================================================
-# Target rules for targets named lesson3_2
-
-# Build rule for target.
-lesson3_2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson3_2
-.PHONY : lesson3_2
-
-# fast build rule for target.
-lesson3_2/fast:
-	$(MAKE) -f CMakeFiles/lesson3_2.dir/build.make CMakeFiles/lesson3_2.dir/build
-.PHONY : lesson3_2/fast
-
-#=============================================================================
-# Target rules for targets named lesson3_1
-
-# Build rule for target.
-lesson3_1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson3_1
-.PHONY : lesson3_1
-
-# fast build rule for target.
-lesson3_1/fast:
-	$(MAKE) -f CMakeFiles/lesson3_1.dir/build.make CMakeFiles/lesson3_1.dir/build
-.PHONY : lesson3_1/fast
-
-#=============================================================================
-# Target rules for targets named lesson1
-
-# Build rule for target.
-lesson1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson1
-.PHONY : lesson1
-
-# fast build rule for target.
-lesson1/fast:
-	$(MAKE) -f CMakeFiles/lesson1.dir/build.make CMakeFiles/lesson1.dir/build
-.PHONY : lesson1/fast
-
-#=============================================================================
-# Target rules for targets named lesson5
-
-# Build rule for target.
-lesson5: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson5
-.PHONY : lesson5
-
-# fast build rule for target.
-lesson5/fast:
-	$(MAKE) -f CMakeFiles/lesson5.dir/build.make CMakeFiles/lesson5.dir/build
-.PHONY : lesson5/fast
-
-#=============================================================================
-# Target rules for targets named lesson10_1
-
-# Build rule for target.
-lesson10_1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson10_1
-.PHONY : lesson10_1
-
-# fast build rule for target.
-lesson10_1/fast:
-	$(MAKE) -f CMakeFiles/lesson10_1.dir/build.make CMakeFiles/lesson10_1.dir/build
-.PHONY : lesson10_1/fast
+lesson9/fast:
+	$(MAKE) -f CMakeFiles/lesson9.dir/build.make CMakeFiles/lesson9.dir/build
+.PHONY : lesson9/fast
 
 #=============================================================================
 # Target rules for targets named lesson7
@@ -241,6 +137,201 @@ lesson7/fast:
 .PHONY : lesson7/fast
 
 #=============================================================================
+# Target rules for targets named lesson10_1
+
+# Build rule for target.
+lesson10_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson10_1
+.PHONY : lesson10_1
+
+# fast build rule for target.
+lesson10_1/fast:
+	$(MAKE) -f CMakeFiles/lesson10_1.dir/build.make CMakeFiles/lesson10_1.dir/build
+.PHONY : lesson10_1/fast
+
+#=============================================================================
+# Target rules for targets named lesson5
+
+# Build rule for target.
+lesson5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson5
+.PHONY : lesson5
+
+# fast build rule for target.
+lesson5/fast:
+	$(MAKE) -f CMakeFiles/lesson5.dir/build.make CMakeFiles/lesson5.dir/build
+.PHONY : lesson5/fast
+
+#=============================================================================
+# Target rules for targets named lesson3_1
+
+# Build rule for target.
+lesson3_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson3_1
+.PHONY : lesson3_1
+
+# fast build rule for target.
+lesson3_1/fast:
+	$(MAKE) -f CMakeFiles/lesson3_1.dir/build.make CMakeFiles/lesson3_1.dir/build
+.PHONY : lesson3_1/fast
+
+#=============================================================================
+# Target rules for targets named shellmad_15_2
+
+# Build rule for target.
+shellmad_15_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_15_2
+.PHONY : shellmad_15_2
+
+# fast build rule for target.
+shellmad_15_2/fast:
+	$(MAKE) -f CMakeFiles/shellmad_15_2.dir/build.make CMakeFiles/shellmad_15_2.dir/build
+.PHONY : shellmad_15_2/fast
+
+#=============================================================================
+# Target rules for targets named lesson3_2
+
+# Build rule for target.
+lesson3_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson3_2
+.PHONY : lesson3_2
+
+# fast build rule for target.
+lesson3_2/fast:
+	$(MAKE) -f CMakeFiles/lesson3_2.dir/build.make CMakeFiles/lesson3_2.dir/build
+.PHONY : lesson3_2/fast
+
+#=============================================================================
+# Target rules for targets named shellmad_17_1
+
+# Build rule for target.
+shellmad_17_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_17_1
+.PHONY : shellmad_17_1
+
+# fast build rule for target.
+shellmad_17_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_17_1.dir/build.make CMakeFiles/shellmad_17_1.dir/build
+.PHONY : shellmad_17_1/fast
+
+#=============================================================================
+# Target rules for targets named lesson4
+
+# Build rule for target.
+lesson4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson4
+.PHONY : lesson4
+
+# fast build rule for target.
+lesson4/fast:
+	$(MAKE) -f CMakeFiles/lesson4.dir/build.make CMakeFiles/lesson4.dir/build
+.PHONY : lesson4/fast
+
+#=============================================================================
+# Target rules for targets named shellmad_20_1
+
+# Build rule for target.
+shellmad_20_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_20_1
+.PHONY : shellmad_20_1
+
+# fast build rule for target.
+shellmad_20_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_20_1.dir/build.make CMakeFiles/shellmad_20_1.dir/build
+.PHONY : shellmad_20_1/fast
+
+#=============================================================================
+# Target rules for targets named shellmad_15_3
+
+# Build rule for target.
+shellmad_15_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_15_3
+.PHONY : shellmad_15_3
+
+# fast build rule for target.
+shellmad_15_3/fast:
+	$(MAKE) -f CMakeFiles/shellmad_15_3.dir/build.make CMakeFiles/shellmad_15_3.dir/build
+.PHONY : shellmad_15_3/fast
+
+#=============================================================================
+# Target rules for targets named lesson11
+
+# Build rule for target.
+lesson11: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson11
+.PHONY : lesson11
+
+# fast build rule for target.
+lesson11/fast:
+	$(MAKE) -f CMakeFiles/lesson11.dir/build.make CMakeFiles/lesson11.dir/build
+.PHONY : lesson11/fast
+
+#=============================================================================
+# Target rules for targets named lesson6
+
+# Build rule for target.
+lesson6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson6
+.PHONY : lesson6
+
+# fast build rule for target.
+lesson6/fast:
+	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/build
+.PHONY : lesson6/fast
+
+#=============================================================================
+# Target rules for targets named shellmad_18_1
+
+# Build rule for target.
+shellmad_18_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_18_1
+.PHONY : shellmad_18_1
+
+# fast build rule for target.
+shellmad_18_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_18_1.dir/build.make CMakeFiles/shellmad_18_1.dir/build
+.PHONY : shellmad_18_1/fast
+
+#=============================================================================
+# Target rules for targets named lesson1
+
+# Build rule for target.
+lesson1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson1
+.PHONY : lesson1
+
+# fast build rule for target.
+lesson1/fast:
+	$(MAKE) -f CMakeFiles/lesson1.dir/build.make CMakeFiles/lesson1.dir/build
+.PHONY : lesson1/fast
+
+#=============================================================================
+# Target rules for targets named lesson24
+
+# Build rule for target.
+lesson24: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lesson24
+.PHONY : lesson24
+
+# fast build rule for target.
+lesson24/fast:
+	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/build
+.PHONY : lesson24/fast
+
+#=============================================================================
+# Target rules for targets named unique_ptr_test
+
+# Build rule for target.
+unique_ptr_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 unique_ptr_test
+.PHONY : unique_ptr_test
+
+# fast build rule for target.
+unique_ptr_test/fast:
+	$(MAKE) -f CMakeFiles/unique_ptr_test.dir/build.make CMakeFiles/unique_ptr_test.dir/build
+.PHONY : unique_ptr_test/fast
+
+#=============================================================================
 # Target rules for targets named lesson8
 
 # Build rule for target.
@@ -254,17 +345,43 @@ lesson8/fast:
 .PHONY : lesson8/fast
 
 #=============================================================================
-# Target rules for targets named lesson9
+# Target rules for targets named shellmad_15_1
 
 # Build rule for target.
-lesson9: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lesson9
-.PHONY : lesson9
+shellmad_15_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_15_1
+.PHONY : shellmad_15_1
 
 # fast build rule for target.
-lesson9/fast:
-	$(MAKE) -f CMakeFiles/lesson9.dir/build.make CMakeFiles/lesson9.dir/build
-.PHONY : lesson9/fast
+shellmad_15_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_15_1.dir/build.make CMakeFiles/shellmad_15_1.dir/build
+.PHONY : shellmad_15_1/fast
+
+#=============================================================================
+# Target rules for targets named shellmad_16_1
+
+# Build rule for target.
+shellmad_16_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_16_1
+.PHONY : shellmad_16_1
+
+# fast build rule for target.
+shellmad_16_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_16_1.dir/build.make CMakeFiles/shellmad_16_1.dir/build
+.PHONY : shellmad_16_1/fast
+
+#=============================================================================
+# Target rules for targets named shellmad_21_1
+
+# Build rule for target.
+shellmad_21_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_21_1
+.PHONY : shellmad_21_1
+
+# fast build rule for target.
+shellmad_21_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_21_1.dir/build.make CMakeFiles/shellmad_21_1.dir/build
+.PHONY : shellmad_21_1/fast
 
 Utilities/BinaryTree.o: Utilities/BinaryTree.cpp.o
 
@@ -299,8 +416,8 @@ Utilities/List.o: Utilities/List.cpp.o
 
 # target to build an object file
 Utilities/List.cpp.o:
-	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/Utilities/List.cpp.o
 	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/Utilities/List.cpp.o
+	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/Utilities/List.cpp.o
 .PHONY : Utilities/List.cpp.o
 
 Utilities/List.i: Utilities/List.cpp.i
@@ -309,8 +426,8 @@ Utilities/List.i: Utilities/List.cpp.i
 
 # target to preprocess a source file
 Utilities/List.cpp.i:
-	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/Utilities/List.cpp.i
 	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/Utilities/List.cpp.i
+	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/Utilities/List.cpp.i
 .PHONY : Utilities/List.cpp.i
 
 Utilities/List.s: Utilities/List.cpp.s
@@ -319,8 +436,8 @@ Utilities/List.s: Utilities/List.cpp.s
 
 # target to generate assembly for a file
 Utilities/List.cpp.s:
-	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/Utilities/List.cpp.s
 	$(MAKE) -f CMakeFiles/lesson6.dir/build.make CMakeFiles/lesson6.dir/Utilities/List.cpp.s
+	$(MAKE) -f CMakeFiles/lesson24.dir/build.make CMakeFiles/lesson24.dir/Utilities/List.cpp.s
 .PHONY : Utilities/List.cpp.s
 
 lesson1/lesson1.o: lesson1/lesson1.cpp.o
@@ -647,26 +764,278 @@ lesson9/lesson9.cpp.s:
 	$(MAKE) -f CMakeFiles/lesson9.dir/build.make CMakeFiles/lesson9.dir/lesson9/lesson9.cpp.s
 .PHONY : lesson9/lesson9.cpp.s
 
+smartPointers/shellmad_15_1.o: smartPointers/shellmad_15_1.cpp.o
+
+.PHONY : smartPointers/shellmad_15_1.o
+
+# target to build an object file
+smartPointers/shellmad_15_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_15_1.dir/build.make CMakeFiles/shellmad_15_1.dir/smartPointers/shellmad_15_1.cpp.o
+.PHONY : smartPointers/shellmad_15_1.cpp.o
+
+smartPointers/shellmad_15_1.i: smartPointers/shellmad_15_1.cpp.i
+
+.PHONY : smartPointers/shellmad_15_1.i
+
+# target to preprocess a source file
+smartPointers/shellmad_15_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_15_1.dir/build.make CMakeFiles/shellmad_15_1.dir/smartPointers/shellmad_15_1.cpp.i
+.PHONY : smartPointers/shellmad_15_1.cpp.i
+
+smartPointers/shellmad_15_1.s: smartPointers/shellmad_15_1.cpp.s
+
+.PHONY : smartPointers/shellmad_15_1.s
+
+# target to generate assembly for a file
+smartPointers/shellmad_15_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_15_1.dir/build.make CMakeFiles/shellmad_15_1.dir/smartPointers/shellmad_15_1.cpp.s
+.PHONY : smartPointers/shellmad_15_1.cpp.s
+
+smartPointers/shellmad_15_2.o: smartPointers/shellmad_15_2.cpp.o
+
+.PHONY : smartPointers/shellmad_15_2.o
+
+# target to build an object file
+smartPointers/shellmad_15_2.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_15_2.dir/build.make CMakeFiles/shellmad_15_2.dir/smartPointers/shellmad_15_2.cpp.o
+.PHONY : smartPointers/shellmad_15_2.cpp.o
+
+smartPointers/shellmad_15_2.i: smartPointers/shellmad_15_2.cpp.i
+
+.PHONY : smartPointers/shellmad_15_2.i
+
+# target to preprocess a source file
+smartPointers/shellmad_15_2.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_15_2.dir/build.make CMakeFiles/shellmad_15_2.dir/smartPointers/shellmad_15_2.cpp.i
+.PHONY : smartPointers/shellmad_15_2.cpp.i
+
+smartPointers/shellmad_15_2.s: smartPointers/shellmad_15_2.cpp.s
+
+.PHONY : smartPointers/shellmad_15_2.s
+
+# target to generate assembly for a file
+smartPointers/shellmad_15_2.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_15_2.dir/build.make CMakeFiles/shellmad_15_2.dir/smartPointers/shellmad_15_2.cpp.s
+.PHONY : smartPointers/shellmad_15_2.cpp.s
+
+smartPointers/shellmad_15_3.o: smartPointers/shellmad_15_3.cpp.o
+
+.PHONY : smartPointers/shellmad_15_3.o
+
+# target to build an object file
+smartPointers/shellmad_15_3.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_15_3.dir/build.make CMakeFiles/shellmad_15_3.dir/smartPointers/shellmad_15_3.cpp.o
+.PHONY : smartPointers/shellmad_15_3.cpp.o
+
+smartPointers/shellmad_15_3.i: smartPointers/shellmad_15_3.cpp.i
+
+.PHONY : smartPointers/shellmad_15_3.i
+
+# target to preprocess a source file
+smartPointers/shellmad_15_3.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_15_3.dir/build.make CMakeFiles/shellmad_15_3.dir/smartPointers/shellmad_15_3.cpp.i
+.PHONY : smartPointers/shellmad_15_3.cpp.i
+
+smartPointers/shellmad_15_3.s: smartPointers/shellmad_15_3.cpp.s
+
+.PHONY : smartPointers/shellmad_15_3.s
+
+# target to generate assembly for a file
+smartPointers/shellmad_15_3.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_15_3.dir/build.make CMakeFiles/shellmad_15_3.dir/smartPointers/shellmad_15_3.cpp.s
+.PHONY : smartPointers/shellmad_15_3.cpp.s
+
+smartPointers/shellmad_16_1.o: smartPointers/shellmad_16_1.cpp.o
+
+.PHONY : smartPointers/shellmad_16_1.o
+
+# target to build an object file
+smartPointers/shellmad_16_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_16_1.dir/build.make CMakeFiles/shellmad_16_1.dir/smartPointers/shellmad_16_1.cpp.o
+.PHONY : smartPointers/shellmad_16_1.cpp.o
+
+smartPointers/shellmad_16_1.i: smartPointers/shellmad_16_1.cpp.i
+
+.PHONY : smartPointers/shellmad_16_1.i
+
+# target to preprocess a source file
+smartPointers/shellmad_16_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_16_1.dir/build.make CMakeFiles/shellmad_16_1.dir/smartPointers/shellmad_16_1.cpp.i
+.PHONY : smartPointers/shellmad_16_1.cpp.i
+
+smartPointers/shellmad_16_1.s: smartPointers/shellmad_16_1.cpp.s
+
+.PHONY : smartPointers/shellmad_16_1.s
+
+# target to generate assembly for a file
+smartPointers/shellmad_16_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_16_1.dir/build.make CMakeFiles/shellmad_16_1.dir/smartPointers/shellmad_16_1.cpp.s
+.PHONY : smartPointers/shellmad_16_1.cpp.s
+
+smartPointers/shellmad_17_1.o: smartPointers/shellmad_17_1.cpp.o
+
+.PHONY : smartPointers/shellmad_17_1.o
+
+# target to build an object file
+smartPointers/shellmad_17_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_17_1.dir/build.make CMakeFiles/shellmad_17_1.dir/smartPointers/shellmad_17_1.cpp.o
+.PHONY : smartPointers/shellmad_17_1.cpp.o
+
+smartPointers/shellmad_17_1.i: smartPointers/shellmad_17_1.cpp.i
+
+.PHONY : smartPointers/shellmad_17_1.i
+
+# target to preprocess a source file
+smartPointers/shellmad_17_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_17_1.dir/build.make CMakeFiles/shellmad_17_1.dir/smartPointers/shellmad_17_1.cpp.i
+.PHONY : smartPointers/shellmad_17_1.cpp.i
+
+smartPointers/shellmad_17_1.s: smartPointers/shellmad_17_1.cpp.s
+
+.PHONY : smartPointers/shellmad_17_1.s
+
+# target to generate assembly for a file
+smartPointers/shellmad_17_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_17_1.dir/build.make CMakeFiles/shellmad_17_1.dir/smartPointers/shellmad_17_1.cpp.s
+.PHONY : smartPointers/shellmad_17_1.cpp.s
+
+smartPointers/shellmad_18_1.o: smartPointers/shellmad_18_1.cpp.o
+
+.PHONY : smartPointers/shellmad_18_1.o
+
+# target to build an object file
+smartPointers/shellmad_18_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_18_1.dir/build.make CMakeFiles/shellmad_18_1.dir/smartPointers/shellmad_18_1.cpp.o
+.PHONY : smartPointers/shellmad_18_1.cpp.o
+
+smartPointers/shellmad_18_1.i: smartPointers/shellmad_18_1.cpp.i
+
+.PHONY : smartPointers/shellmad_18_1.i
+
+# target to preprocess a source file
+smartPointers/shellmad_18_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_18_1.dir/build.make CMakeFiles/shellmad_18_1.dir/smartPointers/shellmad_18_1.cpp.i
+.PHONY : smartPointers/shellmad_18_1.cpp.i
+
+smartPointers/shellmad_18_1.s: smartPointers/shellmad_18_1.cpp.s
+
+.PHONY : smartPointers/shellmad_18_1.s
+
+# target to generate assembly for a file
+smartPointers/shellmad_18_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_18_1.dir/build.make CMakeFiles/shellmad_18_1.dir/smartPointers/shellmad_18_1.cpp.s
+.PHONY : smartPointers/shellmad_18_1.cpp.s
+
+smartPointers/shellmad_20_1.o: smartPointers/shellmad_20_1.cpp.o
+
+.PHONY : smartPointers/shellmad_20_1.o
+
+# target to build an object file
+smartPointers/shellmad_20_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_20_1.dir/build.make CMakeFiles/shellmad_20_1.dir/smartPointers/shellmad_20_1.cpp.o
+.PHONY : smartPointers/shellmad_20_1.cpp.o
+
+smartPointers/shellmad_20_1.i: smartPointers/shellmad_20_1.cpp.i
+
+.PHONY : smartPointers/shellmad_20_1.i
+
+# target to preprocess a source file
+smartPointers/shellmad_20_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_20_1.dir/build.make CMakeFiles/shellmad_20_1.dir/smartPointers/shellmad_20_1.cpp.i
+.PHONY : smartPointers/shellmad_20_1.cpp.i
+
+smartPointers/shellmad_20_1.s: smartPointers/shellmad_20_1.cpp.s
+
+.PHONY : smartPointers/shellmad_20_1.s
+
+# target to generate assembly for a file
+smartPointers/shellmad_20_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_20_1.dir/build.make CMakeFiles/shellmad_20_1.dir/smartPointers/shellmad_20_1.cpp.s
+.PHONY : smartPointers/shellmad_20_1.cpp.s
+
+smartPointers/shellmad_21_1.o: smartPointers/shellmad_21_1.cpp.o
+
+.PHONY : smartPointers/shellmad_21_1.o
+
+# target to build an object file
+smartPointers/shellmad_21_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_21_1.dir/build.make CMakeFiles/shellmad_21_1.dir/smartPointers/shellmad_21_1.cpp.o
+.PHONY : smartPointers/shellmad_21_1.cpp.o
+
+smartPointers/shellmad_21_1.i: smartPointers/shellmad_21_1.cpp.i
+
+.PHONY : smartPointers/shellmad_21_1.i
+
+# target to preprocess a source file
+smartPointers/shellmad_21_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_21_1.dir/build.make CMakeFiles/shellmad_21_1.dir/smartPointers/shellmad_21_1.cpp.i
+.PHONY : smartPointers/shellmad_21_1.cpp.i
+
+smartPointers/shellmad_21_1.s: smartPointers/shellmad_21_1.cpp.s
+
+.PHONY : smartPointers/shellmad_21_1.s
+
+# target to generate assembly for a file
+smartPointers/shellmad_21_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_21_1.dir/build.make CMakeFiles/shellmad_21_1.dir/smartPointers/shellmad_21_1.cpp.s
+.PHONY : smartPointers/shellmad_21_1.cpp.s
+
+smartPointers/unique_ptr_test.o: smartPointers/unique_ptr_test.cpp.o
+
+.PHONY : smartPointers/unique_ptr_test.o
+
+# target to build an object file
+smartPointers/unique_ptr_test.cpp.o:
+	$(MAKE) -f CMakeFiles/unique_ptr_test.dir/build.make CMakeFiles/unique_ptr_test.dir/smartPointers/unique_ptr_test.cpp.o
+.PHONY : smartPointers/unique_ptr_test.cpp.o
+
+smartPointers/unique_ptr_test.i: smartPointers/unique_ptr_test.cpp.i
+
+.PHONY : smartPointers/unique_ptr_test.i
+
+# target to preprocess a source file
+smartPointers/unique_ptr_test.cpp.i:
+	$(MAKE) -f CMakeFiles/unique_ptr_test.dir/build.make CMakeFiles/unique_ptr_test.dir/smartPointers/unique_ptr_test.cpp.i
+.PHONY : smartPointers/unique_ptr_test.cpp.i
+
+smartPointers/unique_ptr_test.s: smartPointers/unique_ptr_test.cpp.s
+
+.PHONY : smartPointers/unique_ptr_test.s
+
+# target to generate assembly for a file
+smartPointers/unique_ptr_test.cpp.s:
+	$(MAKE) -f CMakeFiles/unique_ptr_test.dir/build.make CMakeFiles/unique_ptr_test.dir/smartPointers/unique_ptr_test.cpp.s
+.PHONY : smartPointers/unique_ptr_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... lesson24"
-	@echo "... lesson11"
-	@echo "... lesson4"
-	@echo "... lesson6"
-	@echo "... lesson3_2"
 	@echo "... edit_cache"
-	@echo "... lesson3_1"
-	@echo "... lesson1"
-	@echo "... lesson5"
-	@echo "... lesson10_1"
-	@echo "... lesson7"
-	@echo "... lesson8"
 	@echo "... lesson9"
+	@echo "... lesson7"
+	@echo "... lesson10_1"
+	@echo "... lesson5"
+	@echo "... lesson3_1"
+	@echo "... shellmad_15_2"
+	@echo "... lesson3_2"
+	@echo "... shellmad_17_1"
+	@echo "... lesson4"
+	@echo "... shellmad_20_1"
+	@echo "... shellmad_15_3"
+	@echo "... lesson11"
+	@echo "... lesson6"
+	@echo "... shellmad_18_1"
+	@echo "... lesson1"
+	@echo "... lesson24"
+	@echo "... unique_ptr_test"
+	@echo "... lesson8"
+	@echo "... shellmad_15_1"
+	@echo "... shellmad_16_1"
+	@echo "... shellmad_21_1"
+	@echo "... rebuild_cache"
 	@echo "... Utilities/BinaryTree.o"
 	@echo "... Utilities/BinaryTree.i"
 	@echo "... Utilities/BinaryTree.s"
@@ -709,6 +1078,33 @@ help:
 	@echo "... lesson9/lesson9.o"
 	@echo "... lesson9/lesson9.i"
 	@echo "... lesson9/lesson9.s"
+	@echo "... smartPointers/shellmad_15_1.o"
+	@echo "... smartPointers/shellmad_15_1.i"
+	@echo "... smartPointers/shellmad_15_1.s"
+	@echo "... smartPointers/shellmad_15_2.o"
+	@echo "... smartPointers/shellmad_15_2.i"
+	@echo "... smartPointers/shellmad_15_2.s"
+	@echo "... smartPointers/shellmad_15_3.o"
+	@echo "... smartPointers/shellmad_15_3.i"
+	@echo "... smartPointers/shellmad_15_3.s"
+	@echo "... smartPointers/shellmad_16_1.o"
+	@echo "... smartPointers/shellmad_16_1.i"
+	@echo "... smartPointers/shellmad_16_1.s"
+	@echo "... smartPointers/shellmad_17_1.o"
+	@echo "... smartPointers/shellmad_17_1.i"
+	@echo "... smartPointers/shellmad_17_1.s"
+	@echo "... smartPointers/shellmad_18_1.o"
+	@echo "... smartPointers/shellmad_18_1.i"
+	@echo "... smartPointers/shellmad_18_1.s"
+	@echo "... smartPointers/shellmad_20_1.o"
+	@echo "... smartPointers/shellmad_20_1.i"
+	@echo "... smartPointers/shellmad_20_1.s"
+	@echo "... smartPointers/shellmad_21_1.o"
+	@echo "... smartPointers/shellmad_21_1.i"
+	@echo "... smartPointers/shellmad_21_1.s"
+	@echo "... smartPointers/unique_ptr_test.o"
+	@echo "... smartPointers/unique_ptr_test.i"
+	@echo "... smartPointers/unique_ptr_test.s"
 .PHONY : help
 
 
