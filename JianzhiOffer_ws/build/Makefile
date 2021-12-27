@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named shellmad_08_1
+
+# Build rule for target.
+shellmad_08_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_08_1
+.PHONY : shellmad_08_1
+
+# fast build rule for target.
+shellmad_08_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_08_1.dir/build.make CMakeFiles/shellmad_08_1.dir/build
+.PHONY : shellmad_08_1/fast
+
+#=============================================================================
 # Target rules for targets named lesson9
 
 # Build rule for target.
@@ -135,6 +148,19 @@ lesson7: cmake_check_build_system
 lesson7/fast:
 	$(MAKE) -f CMakeFiles/lesson7.dir/build.make CMakeFiles/lesson7.dir/build
 .PHONY : lesson7/fast
+
+#=============================================================================
+# Target rules for targets named shellmad_07_1
+
+# Build rule for target.
+shellmad_07_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_07_1
+.PHONY : shellmad_07_1
+
+# fast build rule for target.
+shellmad_07_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_07_1.dir/build.make CMakeFiles/shellmad_07_1.dir/build
+.PHONY : shellmad_07_1/fast
 
 #=============================================================================
 # Target rules for targets named lesson10_1
@@ -332,6 +358,19 @@ unique_ptr_test/fast:
 .PHONY : unique_ptr_test/fast
 
 #=============================================================================
+# Target rules for targets named shellmad_06_1
+
+# Build rule for target.
+shellmad_06_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_06_1
+.PHONY : shellmad_06_1
+
+# fast build rule for target.
+shellmad_06_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_06_1.dir/build.make CMakeFiles/shellmad_06_1.dir/build
+.PHONY : shellmad_06_1/fast
+
+#=============================================================================
 # Target rules for targets named lesson8
 
 # Build rule for target.
@@ -356,6 +395,19 @@ shellmad_15_1: cmake_check_build_system
 shellmad_15_1/fast:
 	$(MAKE) -f CMakeFiles/shellmad_15_1.dir/build.make CMakeFiles/shellmad_15_1.dir/build
 .PHONY : shellmad_15_1/fast
+
+#=============================================================================
+# Target rules for targets named shellmad_09_1
+
+# Build rule for target.
+shellmad_09_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_09_1
+.PHONY : shellmad_09_1
+
+# fast build rule for target.
+shellmad_09_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_09_1.dir/build.make CMakeFiles/shellmad_09_1.dir/build
+.PHONY : shellmad_09_1/fast
 
 #=============================================================================
 # Target rules for targets named shellmad_16_1
@@ -764,6 +816,114 @@ lesson9/lesson9.cpp.s:
 	$(MAKE) -f CMakeFiles/lesson9.dir/build.make CMakeFiles/lesson9.dir/lesson9/lesson9.cpp.s
 .PHONY : lesson9/lesson9.cpp.s
 
+shellmad_cast/shellmad_06_1.o: shellmad_cast/shellmad_06_1.cpp.o
+
+.PHONY : shellmad_cast/shellmad_06_1.o
+
+# target to build an object file
+shellmad_cast/shellmad_06_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_06_1.dir/build.make CMakeFiles/shellmad_06_1.dir/shellmad_cast/shellmad_06_1.cpp.o
+.PHONY : shellmad_cast/shellmad_06_1.cpp.o
+
+shellmad_cast/shellmad_06_1.i: shellmad_cast/shellmad_06_1.cpp.i
+
+.PHONY : shellmad_cast/shellmad_06_1.i
+
+# target to preprocess a source file
+shellmad_cast/shellmad_06_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_06_1.dir/build.make CMakeFiles/shellmad_06_1.dir/shellmad_cast/shellmad_06_1.cpp.i
+.PHONY : shellmad_cast/shellmad_06_1.cpp.i
+
+shellmad_cast/shellmad_06_1.s: shellmad_cast/shellmad_06_1.cpp.s
+
+.PHONY : shellmad_cast/shellmad_06_1.s
+
+# target to generate assembly for a file
+shellmad_cast/shellmad_06_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_06_1.dir/build.make CMakeFiles/shellmad_06_1.dir/shellmad_cast/shellmad_06_1.cpp.s
+.PHONY : shellmad_cast/shellmad_06_1.cpp.s
+
+shellmad_cast/shellmad_07_1.o: shellmad_cast/shellmad_07_1.cpp.o
+
+.PHONY : shellmad_cast/shellmad_07_1.o
+
+# target to build an object file
+shellmad_cast/shellmad_07_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_07_1.dir/build.make CMakeFiles/shellmad_07_1.dir/shellmad_cast/shellmad_07_1.cpp.o
+.PHONY : shellmad_cast/shellmad_07_1.cpp.o
+
+shellmad_cast/shellmad_07_1.i: shellmad_cast/shellmad_07_1.cpp.i
+
+.PHONY : shellmad_cast/shellmad_07_1.i
+
+# target to preprocess a source file
+shellmad_cast/shellmad_07_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_07_1.dir/build.make CMakeFiles/shellmad_07_1.dir/shellmad_cast/shellmad_07_1.cpp.i
+.PHONY : shellmad_cast/shellmad_07_1.cpp.i
+
+shellmad_cast/shellmad_07_1.s: shellmad_cast/shellmad_07_1.cpp.s
+
+.PHONY : shellmad_cast/shellmad_07_1.s
+
+# target to generate assembly for a file
+shellmad_cast/shellmad_07_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_07_1.dir/build.make CMakeFiles/shellmad_07_1.dir/shellmad_cast/shellmad_07_1.cpp.s
+.PHONY : shellmad_cast/shellmad_07_1.cpp.s
+
+shellmad_cast/shellmad_08_1.o: shellmad_cast/shellmad_08_1.cpp.o
+
+.PHONY : shellmad_cast/shellmad_08_1.o
+
+# target to build an object file
+shellmad_cast/shellmad_08_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_08_1.dir/build.make CMakeFiles/shellmad_08_1.dir/shellmad_cast/shellmad_08_1.cpp.o
+.PHONY : shellmad_cast/shellmad_08_1.cpp.o
+
+shellmad_cast/shellmad_08_1.i: shellmad_cast/shellmad_08_1.cpp.i
+
+.PHONY : shellmad_cast/shellmad_08_1.i
+
+# target to preprocess a source file
+shellmad_cast/shellmad_08_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_08_1.dir/build.make CMakeFiles/shellmad_08_1.dir/shellmad_cast/shellmad_08_1.cpp.i
+.PHONY : shellmad_cast/shellmad_08_1.cpp.i
+
+shellmad_cast/shellmad_08_1.s: shellmad_cast/shellmad_08_1.cpp.s
+
+.PHONY : shellmad_cast/shellmad_08_1.s
+
+# target to generate assembly for a file
+shellmad_cast/shellmad_08_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_08_1.dir/build.make CMakeFiles/shellmad_08_1.dir/shellmad_cast/shellmad_08_1.cpp.s
+.PHONY : shellmad_cast/shellmad_08_1.cpp.s
+
+shellmad_cast/shellmad_09_1.o: shellmad_cast/shellmad_09_1.cpp.o
+
+.PHONY : shellmad_cast/shellmad_09_1.o
+
+# target to build an object file
+shellmad_cast/shellmad_09_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_09_1.dir/build.make CMakeFiles/shellmad_09_1.dir/shellmad_cast/shellmad_09_1.cpp.o
+.PHONY : shellmad_cast/shellmad_09_1.cpp.o
+
+shellmad_cast/shellmad_09_1.i: shellmad_cast/shellmad_09_1.cpp.i
+
+.PHONY : shellmad_cast/shellmad_09_1.i
+
+# target to preprocess a source file
+shellmad_cast/shellmad_09_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_09_1.dir/build.make CMakeFiles/shellmad_09_1.dir/shellmad_cast/shellmad_09_1.cpp.i
+.PHONY : shellmad_cast/shellmad_09_1.cpp.i
+
+shellmad_cast/shellmad_09_1.s: shellmad_cast/shellmad_09_1.cpp.s
+
+.PHONY : shellmad_cast/shellmad_09_1.s
+
+# target to generate assembly for a file
+shellmad_cast/shellmad_09_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_09_1.dir/build.make CMakeFiles/shellmad_09_1.dir/shellmad_cast/shellmad_09_1.cpp.s
+.PHONY : shellmad_cast/shellmad_09_1.cpp.s
+
 smartPointers/shellmad_15_1.o: smartPointers/shellmad_15_1.cpp.o
 
 .PHONY : smartPointers/shellmad_15_1.o
@@ -1014,8 +1174,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... shellmad_08_1"
 	@echo "... lesson9"
 	@echo "... lesson7"
+	@echo "... shellmad_07_1"
 	@echo "... lesson10_1"
 	@echo "... lesson5"
 	@echo "... lesson3_1"
@@ -1031,11 +1193,13 @@ help:
 	@echo "... lesson1"
 	@echo "... lesson24"
 	@echo "... unique_ptr_test"
+	@echo "... shellmad_06_1"
 	@echo "... lesson8"
 	@echo "... shellmad_15_1"
+	@echo "... shellmad_09_1"
 	@echo "... shellmad_16_1"
-	@echo "... shellmad_21_1"
 	@echo "... rebuild_cache"
+	@echo "... shellmad_21_1"
 	@echo "... Utilities/BinaryTree.o"
 	@echo "... Utilities/BinaryTree.i"
 	@echo "... Utilities/BinaryTree.s"
@@ -1078,6 +1242,18 @@ help:
 	@echo "... lesson9/lesson9.o"
 	@echo "... lesson9/lesson9.i"
 	@echo "... lesson9/lesson9.s"
+	@echo "... shellmad_cast/shellmad_06_1.o"
+	@echo "... shellmad_cast/shellmad_06_1.i"
+	@echo "... shellmad_cast/shellmad_06_1.s"
+	@echo "... shellmad_cast/shellmad_07_1.o"
+	@echo "... shellmad_cast/shellmad_07_1.i"
+	@echo "... shellmad_cast/shellmad_07_1.s"
+	@echo "... shellmad_cast/shellmad_08_1.o"
+	@echo "... shellmad_cast/shellmad_08_1.i"
+	@echo "... shellmad_cast/shellmad_08_1.s"
+	@echo "... shellmad_cast/shellmad_09_1.o"
+	@echo "... shellmad_cast/shellmad_09_1.i"
+	@echo "... shellmad_cast/shellmad_09_1.s"
 	@echo "... smartPointers/shellmad_15_1.o"
 	@echo "... smartPointers/shellmad_15_1.i"
 	@echo "... smartPointers/shellmad_15_1.s"

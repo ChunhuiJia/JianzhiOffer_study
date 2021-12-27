@@ -61,7 +61,8 @@
         "random": "cpp",
         "set": "cpp",
         "string": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "typeindex": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

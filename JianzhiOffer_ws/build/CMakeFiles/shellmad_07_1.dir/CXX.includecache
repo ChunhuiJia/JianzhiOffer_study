@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/shellmad_cast/shellmad_07_1.cpp
+iostream
+-
+cstring
+-
+
