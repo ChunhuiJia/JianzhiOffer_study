@@ -36,5 +36,25 @@ add_executable(shellmad_06_1 shellmad_cast/shellmad_06_1.cpp)
 add_executable(shellmad_07_1 shellmad_cast/shellmad_07_1.cpp)
 add_executable(shellmad_08_1 shellmad_cast/shellmad_08_1.cpp)
 add_executable(shellmad_09_1 shellmad_cast/shellmad_09_1.cpp)
+add_executable(shellmad_10_1 shellmad_lambda/shellmad_10_1.cpp)
+add_executable(shellmad_27_1 shellmad_thread/shellmad_27_1.cpp)
+target_link_libraries(shellmad_27_1 pthread)
+add_executable(shellmad_28_1 shellmad_thread/shellmad_28_1.cpp)
+target_link_libraries(shellmad_28_1 pthread)
+
+add_executable(shellmad_32_1 shellmad_thread/shellmad_32_1.cpp)
+target_link_libraries(shellmad_32_1 pthread)
+
+add_executable(shellmad_33_1 shellmad_thread/shellmad_33_1.cpp)
+target_link_libraries(shellmad_33_1 pthread)
+
+add_executable(shellmad_34_1 shellmad_thread/shellmad_34_1.cpp)
+target_link_libraries(shellmad_34_1 pthread)
+add_executable(shellmad_34_2 shellmad_thread/shellmad_34_2.cpp)
+target_link_libraries(shellmad_34_2 pthread)
+
+
+
+
 
 

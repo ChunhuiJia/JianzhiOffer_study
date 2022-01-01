@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jch/Learn/JianzhiOffer_study/JianzhiOffer_ws/shellmad_lambda/shellmad_10_1.cpp
+algorithm
+-
+iostream
+-
+vector
+-
+

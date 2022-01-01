@@ -41,11 +41,17 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/shellmad_34_2.dir/DependInfo.cmake"
+  "CMakeFiles/shellmad_33_1.dir/DependInfo.cmake"
+  "CMakeFiles/shellmad_10_1.dir/DependInfo.cmake"
+  "CMakeFiles/shellmad_27_1.dir/DependInfo.cmake"
   "CMakeFiles/shellmad_08_1.dir/DependInfo.cmake"
   "CMakeFiles/lesson9.dir/DependInfo.cmake"
   "CMakeFiles/lesson7.dir/DependInfo.cmake"
+  "CMakeFiles/shellmad_34_1.dir/DependInfo.cmake"
   "CMakeFiles/shellmad_07_1.dir/DependInfo.cmake"
   "CMakeFiles/lesson10_1.dir/DependInfo.cmake"
+  "CMakeFiles/shellmad_28_1.dir/DependInfo.cmake"
   "CMakeFiles/lesson5.dir/DependInfo.cmake"
   "CMakeFiles/lesson3_1.dir/DependInfo.cmake"
   "CMakeFiles/shellmad_15_2.dir/DependInfo.cmake"
@@ -53,6 +59,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/shellmad_17_1.dir/DependInfo.cmake"
   "CMakeFiles/lesson4.dir/DependInfo.cmake"
   "CMakeFiles/shellmad_20_1.dir/DependInfo.cmake"
+  "CMakeFiles/shellmad_32_1.dir/DependInfo.cmake"
   "CMakeFiles/shellmad_15_3.dir/DependInfo.cmake"
   "CMakeFiles/lesson11.dir/DependInfo.cmake"
   "CMakeFiles/lesson6.dir/DependInfo.cmake"

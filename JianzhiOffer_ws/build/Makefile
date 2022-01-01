@@ -111,6 +111,58 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named shellmad_34_2
+
+# Build rule for target.
+shellmad_34_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_34_2
+.PHONY : shellmad_34_2
+
+# fast build rule for target.
+shellmad_34_2/fast:
+	$(MAKE) -f CMakeFiles/shellmad_34_2.dir/build.make CMakeFiles/shellmad_34_2.dir/build
+.PHONY : shellmad_34_2/fast
+
+#=============================================================================
+# Target rules for targets named shellmad_33_1
+
+# Build rule for target.
+shellmad_33_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_33_1
+.PHONY : shellmad_33_1
+
+# fast build rule for target.
+shellmad_33_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_33_1.dir/build.make CMakeFiles/shellmad_33_1.dir/build
+.PHONY : shellmad_33_1/fast
+
+#=============================================================================
+# Target rules for targets named shellmad_10_1
+
+# Build rule for target.
+shellmad_10_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_10_1
+.PHONY : shellmad_10_1
+
+# fast build rule for target.
+shellmad_10_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_10_1.dir/build.make CMakeFiles/shellmad_10_1.dir/build
+.PHONY : shellmad_10_1/fast
+
+#=============================================================================
+# Target rules for targets named shellmad_27_1
+
+# Build rule for target.
+shellmad_27_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_27_1
+.PHONY : shellmad_27_1
+
+# fast build rule for target.
+shellmad_27_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_27_1.dir/build.make CMakeFiles/shellmad_27_1.dir/build
+.PHONY : shellmad_27_1/fast
+
+#=============================================================================
 # Target rules for targets named shellmad_08_1
 
 # Build rule for target.
@@ -150,6 +202,19 @@ lesson7/fast:
 .PHONY : lesson7/fast
 
 #=============================================================================
+# Target rules for targets named shellmad_34_1
+
+# Build rule for target.
+shellmad_34_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_34_1
+.PHONY : shellmad_34_1
+
+# fast build rule for target.
+shellmad_34_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_34_1.dir/build.make CMakeFiles/shellmad_34_1.dir/build
+.PHONY : shellmad_34_1/fast
+
+#=============================================================================
 # Target rules for targets named shellmad_07_1
 
 # Build rule for target.
@@ -174,6 +239,19 @@ lesson10_1: cmake_check_build_system
 lesson10_1/fast:
 	$(MAKE) -f CMakeFiles/lesson10_1.dir/build.make CMakeFiles/lesson10_1.dir/build
 .PHONY : lesson10_1/fast
+
+#=============================================================================
+# Target rules for targets named shellmad_28_1
+
+# Build rule for target.
+shellmad_28_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_28_1
+.PHONY : shellmad_28_1
+
+# fast build rule for target.
+shellmad_28_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_28_1.dir/build.make CMakeFiles/shellmad_28_1.dir/build
+.PHONY : shellmad_28_1/fast
 
 #=============================================================================
 # Target rules for targets named lesson5
@@ -265,6 +343,19 @@ shellmad_20_1: cmake_check_build_system
 shellmad_20_1/fast:
 	$(MAKE) -f CMakeFiles/shellmad_20_1.dir/build.make CMakeFiles/shellmad_20_1.dir/build
 .PHONY : shellmad_20_1/fast
+
+#=============================================================================
+# Target rules for targets named shellmad_32_1
+
+# Build rule for target.
+shellmad_32_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shellmad_32_1
+.PHONY : shellmad_32_1
+
+# fast build rule for target.
+shellmad_32_1/fast:
+	$(MAKE) -f CMakeFiles/shellmad_32_1.dir/build.make CMakeFiles/shellmad_32_1.dir/build
+.PHONY : shellmad_32_1/fast
 
 #=============================================================================
 # Target rules for targets named shellmad_15_3
@@ -924,6 +1015,195 @@ shellmad_cast/shellmad_09_1.cpp.s:
 	$(MAKE) -f CMakeFiles/shellmad_09_1.dir/build.make CMakeFiles/shellmad_09_1.dir/shellmad_cast/shellmad_09_1.cpp.s
 .PHONY : shellmad_cast/shellmad_09_1.cpp.s
 
+shellmad_lambda/shellmad_10_1.o: shellmad_lambda/shellmad_10_1.cpp.o
+
+.PHONY : shellmad_lambda/shellmad_10_1.o
+
+# target to build an object file
+shellmad_lambda/shellmad_10_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_10_1.dir/build.make CMakeFiles/shellmad_10_1.dir/shellmad_lambda/shellmad_10_1.cpp.o
+.PHONY : shellmad_lambda/shellmad_10_1.cpp.o
+
+shellmad_lambda/shellmad_10_1.i: shellmad_lambda/shellmad_10_1.cpp.i
+
+.PHONY : shellmad_lambda/shellmad_10_1.i
+
+# target to preprocess a source file
+shellmad_lambda/shellmad_10_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_10_1.dir/build.make CMakeFiles/shellmad_10_1.dir/shellmad_lambda/shellmad_10_1.cpp.i
+.PHONY : shellmad_lambda/shellmad_10_1.cpp.i
+
+shellmad_lambda/shellmad_10_1.s: shellmad_lambda/shellmad_10_1.cpp.s
+
+.PHONY : shellmad_lambda/shellmad_10_1.s
+
+# target to generate assembly for a file
+shellmad_lambda/shellmad_10_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_10_1.dir/build.make CMakeFiles/shellmad_10_1.dir/shellmad_lambda/shellmad_10_1.cpp.s
+.PHONY : shellmad_lambda/shellmad_10_1.cpp.s
+
+shellmad_thread/shellmad_27_1.o: shellmad_thread/shellmad_27_1.cpp.o
+
+.PHONY : shellmad_thread/shellmad_27_1.o
+
+# target to build an object file
+shellmad_thread/shellmad_27_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_27_1.dir/build.make CMakeFiles/shellmad_27_1.dir/shellmad_thread/shellmad_27_1.cpp.o
+.PHONY : shellmad_thread/shellmad_27_1.cpp.o
+
+shellmad_thread/shellmad_27_1.i: shellmad_thread/shellmad_27_1.cpp.i
+
+.PHONY : shellmad_thread/shellmad_27_1.i
+
+# target to preprocess a source file
+shellmad_thread/shellmad_27_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_27_1.dir/build.make CMakeFiles/shellmad_27_1.dir/shellmad_thread/shellmad_27_1.cpp.i
+.PHONY : shellmad_thread/shellmad_27_1.cpp.i
+
+shellmad_thread/shellmad_27_1.s: shellmad_thread/shellmad_27_1.cpp.s
+
+.PHONY : shellmad_thread/shellmad_27_1.s
+
+# target to generate assembly for a file
+shellmad_thread/shellmad_27_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_27_1.dir/build.make CMakeFiles/shellmad_27_1.dir/shellmad_thread/shellmad_27_1.cpp.s
+.PHONY : shellmad_thread/shellmad_27_1.cpp.s
+
+shellmad_thread/shellmad_28_1.o: shellmad_thread/shellmad_28_1.cpp.o
+
+.PHONY : shellmad_thread/shellmad_28_1.o
+
+# target to build an object file
+shellmad_thread/shellmad_28_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_28_1.dir/build.make CMakeFiles/shellmad_28_1.dir/shellmad_thread/shellmad_28_1.cpp.o
+.PHONY : shellmad_thread/shellmad_28_1.cpp.o
+
+shellmad_thread/shellmad_28_1.i: shellmad_thread/shellmad_28_1.cpp.i
+
+.PHONY : shellmad_thread/shellmad_28_1.i
+
+# target to preprocess a source file
+shellmad_thread/shellmad_28_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_28_1.dir/build.make CMakeFiles/shellmad_28_1.dir/shellmad_thread/shellmad_28_1.cpp.i
+.PHONY : shellmad_thread/shellmad_28_1.cpp.i
+
+shellmad_thread/shellmad_28_1.s: shellmad_thread/shellmad_28_1.cpp.s
+
+.PHONY : shellmad_thread/shellmad_28_1.s
+
+# target to generate assembly for a file
+shellmad_thread/shellmad_28_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_28_1.dir/build.make CMakeFiles/shellmad_28_1.dir/shellmad_thread/shellmad_28_1.cpp.s
+.PHONY : shellmad_thread/shellmad_28_1.cpp.s
+
+shellmad_thread/shellmad_32_1.o: shellmad_thread/shellmad_32_1.cpp.o
+
+.PHONY : shellmad_thread/shellmad_32_1.o
+
+# target to build an object file
+shellmad_thread/shellmad_32_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_32_1.dir/build.make CMakeFiles/shellmad_32_1.dir/shellmad_thread/shellmad_32_1.cpp.o
+.PHONY : shellmad_thread/shellmad_32_1.cpp.o
+
+shellmad_thread/shellmad_32_1.i: shellmad_thread/shellmad_32_1.cpp.i
+
+.PHONY : shellmad_thread/shellmad_32_1.i
+
+# target to preprocess a source file
+shellmad_thread/shellmad_32_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_32_1.dir/build.make CMakeFiles/shellmad_32_1.dir/shellmad_thread/shellmad_32_1.cpp.i
+.PHONY : shellmad_thread/shellmad_32_1.cpp.i
+
+shellmad_thread/shellmad_32_1.s: shellmad_thread/shellmad_32_1.cpp.s
+
+.PHONY : shellmad_thread/shellmad_32_1.s
+
+# target to generate assembly for a file
+shellmad_thread/shellmad_32_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_32_1.dir/build.make CMakeFiles/shellmad_32_1.dir/shellmad_thread/shellmad_32_1.cpp.s
+.PHONY : shellmad_thread/shellmad_32_1.cpp.s
+
+shellmad_thread/shellmad_33_1.o: shellmad_thread/shellmad_33_1.cpp.o
+
+.PHONY : shellmad_thread/shellmad_33_1.o
+
+# target to build an object file
+shellmad_thread/shellmad_33_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_33_1.dir/build.make CMakeFiles/shellmad_33_1.dir/shellmad_thread/shellmad_33_1.cpp.o
+.PHONY : shellmad_thread/shellmad_33_1.cpp.o
+
+shellmad_thread/shellmad_33_1.i: shellmad_thread/shellmad_33_1.cpp.i
+
+.PHONY : shellmad_thread/shellmad_33_1.i
+
+# target to preprocess a source file
+shellmad_thread/shellmad_33_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_33_1.dir/build.make CMakeFiles/shellmad_33_1.dir/shellmad_thread/shellmad_33_1.cpp.i
+.PHONY : shellmad_thread/shellmad_33_1.cpp.i
+
+shellmad_thread/shellmad_33_1.s: shellmad_thread/shellmad_33_1.cpp.s
+
+.PHONY : shellmad_thread/shellmad_33_1.s
+
+# target to generate assembly for a file
+shellmad_thread/shellmad_33_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_33_1.dir/build.make CMakeFiles/shellmad_33_1.dir/shellmad_thread/shellmad_33_1.cpp.s
+.PHONY : shellmad_thread/shellmad_33_1.cpp.s
+
+shellmad_thread/shellmad_34_1.o: shellmad_thread/shellmad_34_1.cpp.o
+
+.PHONY : shellmad_thread/shellmad_34_1.o
+
+# target to build an object file
+shellmad_thread/shellmad_34_1.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_34_1.dir/build.make CMakeFiles/shellmad_34_1.dir/shellmad_thread/shellmad_34_1.cpp.o
+.PHONY : shellmad_thread/shellmad_34_1.cpp.o
+
+shellmad_thread/shellmad_34_1.i: shellmad_thread/shellmad_34_1.cpp.i
+
+.PHONY : shellmad_thread/shellmad_34_1.i
+
+# target to preprocess a source file
+shellmad_thread/shellmad_34_1.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_34_1.dir/build.make CMakeFiles/shellmad_34_1.dir/shellmad_thread/shellmad_34_1.cpp.i
+.PHONY : shellmad_thread/shellmad_34_1.cpp.i
+
+shellmad_thread/shellmad_34_1.s: shellmad_thread/shellmad_34_1.cpp.s
+
+.PHONY : shellmad_thread/shellmad_34_1.s
+
+# target to generate assembly for a file
+shellmad_thread/shellmad_34_1.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_34_1.dir/build.make CMakeFiles/shellmad_34_1.dir/shellmad_thread/shellmad_34_1.cpp.s
+.PHONY : shellmad_thread/shellmad_34_1.cpp.s
+
+shellmad_thread/shellmad_34_2.o: shellmad_thread/shellmad_34_2.cpp.o
+
+.PHONY : shellmad_thread/shellmad_34_2.o
+
+# target to build an object file
+shellmad_thread/shellmad_34_2.cpp.o:
+	$(MAKE) -f CMakeFiles/shellmad_34_2.dir/build.make CMakeFiles/shellmad_34_2.dir/shellmad_thread/shellmad_34_2.cpp.o
+.PHONY : shellmad_thread/shellmad_34_2.cpp.o
+
+shellmad_thread/shellmad_34_2.i: shellmad_thread/shellmad_34_2.cpp.i
+
+.PHONY : shellmad_thread/shellmad_34_2.i
+
+# target to preprocess a source file
+shellmad_thread/shellmad_34_2.cpp.i:
+	$(MAKE) -f CMakeFiles/shellmad_34_2.dir/build.make CMakeFiles/shellmad_34_2.dir/shellmad_thread/shellmad_34_2.cpp.i
+.PHONY : shellmad_thread/shellmad_34_2.cpp.i
+
+shellmad_thread/shellmad_34_2.s: shellmad_thread/shellmad_34_2.cpp.s
+
+.PHONY : shellmad_thread/shellmad_34_2.s
+
+# target to generate assembly for a file
+shellmad_thread/shellmad_34_2.cpp.s:
+	$(MAKE) -f CMakeFiles/shellmad_34_2.dir/build.make CMakeFiles/shellmad_34_2.dir/shellmad_thread/shellmad_34_2.cpp.s
+.PHONY : shellmad_thread/shellmad_34_2.cpp.s
+
 smartPointers/shellmad_15_1.o: smartPointers/shellmad_15_1.cpp.o
 
 .PHONY : smartPointers/shellmad_15_1.o
@@ -1174,11 +1454,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... shellmad_34_2"
+	@echo "... shellmad_33_1"
+	@echo "... shellmad_10_1"
+	@echo "... shellmad_27_1"
 	@echo "... shellmad_08_1"
 	@echo "... lesson9"
 	@echo "... lesson7"
+	@echo "... shellmad_34_1"
 	@echo "... shellmad_07_1"
 	@echo "... lesson10_1"
+	@echo "... shellmad_28_1"
 	@echo "... lesson5"
 	@echo "... lesson3_1"
 	@echo "... shellmad_15_2"
@@ -1186,6 +1472,7 @@ help:
 	@echo "... shellmad_17_1"
 	@echo "... lesson4"
 	@echo "... shellmad_20_1"
+	@echo "... shellmad_32_1"
 	@echo "... shellmad_15_3"
 	@echo "... lesson11"
 	@echo "... lesson6"
@@ -1254,6 +1541,27 @@ help:
 	@echo "... shellmad_cast/shellmad_09_1.o"
 	@echo "... shellmad_cast/shellmad_09_1.i"
 	@echo "... shellmad_cast/shellmad_09_1.s"
+	@echo "... shellmad_lambda/shellmad_10_1.o"
+	@echo "... shellmad_lambda/shellmad_10_1.i"
+	@echo "... shellmad_lambda/shellmad_10_1.s"
+	@echo "... shellmad_thread/shellmad_27_1.o"
+	@echo "... shellmad_thread/shellmad_27_1.i"
+	@echo "... shellmad_thread/shellmad_27_1.s"
+	@echo "... shellmad_thread/shellmad_28_1.o"
+	@echo "... shellmad_thread/shellmad_28_1.i"
+	@echo "... shellmad_thread/shellmad_28_1.s"
+	@echo "... shellmad_thread/shellmad_32_1.o"
+	@echo "... shellmad_thread/shellmad_32_1.i"
+	@echo "... shellmad_thread/shellmad_32_1.s"
+	@echo "... shellmad_thread/shellmad_33_1.o"
+	@echo "... shellmad_thread/shellmad_33_1.i"
+	@echo "... shellmad_thread/shellmad_33_1.s"
+	@echo "... shellmad_thread/shellmad_34_1.o"
+	@echo "... shellmad_thread/shellmad_34_1.i"
+	@echo "... shellmad_thread/shellmad_34_1.s"
+	@echo "... shellmad_thread/shellmad_34_2.o"
+	@echo "... shellmad_thread/shellmad_34_2.i"
+	@echo "... shellmad_thread/shellmad_34_2.s"
 	@echo "... smartPointers/shellmad_15_1.o"
 	@echo "... smartPointers/shellmad_15_1.i"
 	@echo "... smartPointers/shellmad_15_1.s"
