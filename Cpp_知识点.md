@@ -391,3 +391,347 @@ explicit用来防止由构造函数定义的隐式转换
 **段错误应该就是访问了不可访问的内存，这个内存要么是不存在的，要么是受系统保护的**。
 
 [参考链接：Segmentation Fault错误原因总结](https://blog.csdn.net/u010150046/article/details/77775114)
+
+## 30.线程thread的使用
+
+抽时间一定要好好学一学
+
+[参考链接：shellmad-27_C++新特性 线程thread的使用](https://www.bilibili.com/video/BV12k4y117gA?spm_id_from=333.999.0.0)
+
+## 31.强制类型转换
+
+强制类型转换有一定风险的，有的转换并不一定安全，如把**整型数值转换成指针**，把**基类指针转换成派生类指针**，把**一种函数指针转换成另一种函数指针**，把**常量指针转换成非常量指针**等。
+
+**强制类型转换符：**
+
+C++引入了四种功能不同的强制类型转换运算符以进行强制类型转换：（通过编译器检查强制类型转换是否正确）
+
+* **const_cast**：常用
+* **static_cast**：常用
+* **reinterpret_cast**：用的比较少
+* **dynamic_cast**：虚函数用的比较多
+
+**C语言强制类型转换缺点：**
+
+主要是为了克服C语言强制类型转换的一下三个缺点。
+
+* 没有从形式上体现转换功能和风险的不同。
+
+​		例如，将int强制转换成double是没有风险的，而将常量指针转换成非常量指针，将基类指针转换成派生类指针都是高风险的，而且后两者带来的风险不同（即可能引起不同种类的错误），C语言的强制类型转换形式对这些不同并不加以区分。
+
+* 将多态基类指针转换成派生类指针时不检查安全性，即无法判断转换后的指针是否确实指向一个派生类对象。
+* 难以在程序中寻找到底什么地方进行了强制类型转换
+
+强制类型转换是引发程序运行时错误的一个原因，因此在程序出错时，可能就会想到是不是有哪些强制类型转换出了问题。
+
+
+
+### const_cast
+
+仅用于进行去除const属性的转换，它也是四个强制类型转换运算符中唯一能够去除const属性的运算符。
+
+***常量对象或者是基本数据类型不允许转换为非常量对象，只能通过指针和引用来修改：***
+
+
+
+### static_cast
+
+基本等价于隐式转换的一种类型转换运算符，可使用于需要明确隐式转换的地方。
+
+**可以用于低风险的转换**
+
+* 整型和浮点型
+* 字符与整型
+* 转换运算符
+* ***空指针转换为任何目标类型的指针***
+
+**不可以用于风险较高的转换**
+
+* 不同类型的指针之间互相转换
+* 整型和指针之间的互相转换
+* 不同类型的引用之间的转换
+
+
+
+### dynamic_cast
+
+用于具有**虚函数的基类**与**派生类**之间的**指针或引用**的转换。
+
+* **基类必须具备虚函数**
+
+​		原因：dynamic_cast是**运行时类型检查**，需要运行时类型信息(RTTI)，而这个信息是存储与类的**虚函数表**关系紧密，只有一个类定义了虚函数，才会有虚函数表。
+
+* **运行时检查，转型不成功则返回一个空指针**
+* **非必要不要使用dynamic_cast，有额外的函数开销**
+
+常见的转换方式：
+
+* 基类指针或引用转派生类指针(**必须使用**dynamic_cast)
+* 派生类指针或引用转基类指针(可以使用dynamic_cast，但是**更推荐使用static_cast**)
+
+
+
+### reinterpret_cast
+
+* **用于进行各种不同类型的转换**
+  - 不同类型指针之间
+  - 不同类型引用之间
+  - 指针和能容纳指针的整型类型之间的转换
+* **编译器处理，执行的是逐字节复制的操作**
+* **类似于显示强制转换，后果自负**
+
+## 32.const
+
+```
+const int* p;  //const放在前面代表指针指向的内容不能发生改变
+*p = 123;  // 修改指针指向的内容会报错
+```
+
+
+
+```
+int n = 5;
+int* const p = &n;  //const放在后面代表指针本身不能发生改变
+p = 0x123;          //修改指针地址会报错
+```
+
+## 33.字符的双引号和单引号
+
+字符型用单引号
+
+```cpp
+'a'
+```
+
+字符串型用双引号
+
+```cpp
+“HELLO WORLD”
+```
+
+[参考链接：C++ 单引号和双引号区别](https://blog.csdn.net/yyfaith/article/details/80225825)
+
+
+
+## 34.lambda表达式/匿名函数
+
+Lambda表达式是一个源自阿隆佐×邱奇(Alonzo Church) -- 艾伦×图灵(Alan Turing)的老师---的术语。
+
+邱奇创立了lambda演算，后来被证明和图灵机是等价的。
+
+Lambda表达式是c++11中最重要的新特性之一，而Lambda表达式，实际上就是提供了一个类似匿名函数的特性，而匿名函数则是在需要一个函数，但是又不想费力去命名一个函数的情况下去使用的。这样的场景其实有很多很多，所以匿名函数几乎是现代编程语言的标配。
+
+**(1) Lambda表达式基础**
+
+Lambda表达式的基本语法如下：
+
+```cpp
+[捕获列表](参数列表) mutable(可选) 异常属性 -> 返回类型{
+	// 函数体
+}
+[caputrue](params)opt->ret{body;};
+```
+
+* Lambda 表达式以一对**中括号**开始。
+* 跟函数定义一样，我们有**参数列表**
+* 跟正常的函数定义一样，我们会**有一个函数体，里面会有return语句**
+* Lambda表达式**一般不需要说明返回值(相当于auto)**；**有特殊情况需要说明时，则应使用箭头语法的方式**
+* 每个Lambda表达式都有一个全局唯一的类型，要精确捕捉lambda表达式到一个变量中，只能通过auto声明的方式
+
+## 35.线程与同步
+
+对标准库的扩充：语言级线程支持
+
+* std::thread
+* std::mutex/std::unique_lock
+* std::future/std::packaged_task
+* std::condition_variable
+
+### 线程的概念及使用
+
+线程：进程内一个相对独立的、可调度的执行单元，是系统独立调度和分派CPU的基本单元指运行中的程序的调度单位。
+
+​	(1) 线程内核对象。操作系统用它来管理线程，存放线程统计信息。
+
+​	(2) 线程堆栈，用于维护线程在执行代码时，需要的所有函数参数和局部变量。
+
+
+
+时间片：某一间A教室（1班，2班），把时间划分，划分成上午（1班）和下午（2班）。
+
+​				cpu（听歌代码，游戏代码），把cpu时间划分，划分给片段20ms，由线程1（听歌）和线程2（游戏代码）交替运行。 
+
+![image-20211230194630528](Cpp_知识点.assets/image-20211230194630528.png)
+
+### join()函数
+
+* **谁调用的这个函数？**调用了这个函数的线程对象，一定要等这个线程对象的方法（在构造时传入的方法）执行完毕后（或者理解为这个线程的活干完了！），这个join()函数才能得到返回。
+* **在什么线程环境下调用了这个函数？**上面说了必须要等线程方法执行完毕后才能返回，那必然是阻塞调用线程的，也就是说如果一个线程对象在一个线程环境调用了这个函数，那么这个线程环境就会被阻塞，直到这个线程对象在构造时传入的方法执行完毕后，才能继续往下走，另外如果线程对象在调用join()函数之前，就已经完成了自己的事情（在构造时传入的方法执行完毕），那么这个函数不会阻塞线程环境，线程环境正常执行。
+
+[参考链接：C++ std::thread join()的理解](https://www.cnblogs.com/adorkable/p/12722209.html)
+
+举例：
+
+```cpp
+int main()
+{
+    cout << "主线程开始运行\n";
+    std::thread d2(download2);
+    download1();
+    d2.join();
+    process();
+}
+```
+
+* **谁调用的这个函数？**d2这个线程对象调用了join()函数，因此必须d2的下载任务结束了，d2.join()函数才能得到返回。
+* **d2在哪个线程环境下调用了join()函数？**d2是在主线程的环境下调用了join()函数，因此主线程要等待d2的线程工作做完，否则主线程将一直处于block状态；这里不要搞混的是d2真正做的任务（下载）是在另一个线程做的，但是d2调用join()函数的动作是在主线程环境下做的。
+
+
+
+### 线程同步的方法
+
+* 原子操作：
+
+​	是指线程在访问资源时能够确保所有其他线程都不在同一时间内访问相同的资源
+
+
+
+* 临界区
+
+​	临界区是指一个小代码段，在代码能够执行前，它必须独占对某些共享资源的访问权，在线程退出临界区之前，系统将不给想要访问相同资源的其他任何线程进行调度。
+
+
+
+### 死锁
+
+线程（程序）在等待一个永远都不能成功的条件成立，从而进入到陷入休眠，永远不能被唤醒的状态。
+
+**举例1：两个线程互相等待**
+
+* 原理：
+
+```
+线程1：
+	获取锁1, 等待锁2
+线程2：
+	获取锁2, 等待锁1
+```
+
+### 互斥量
+
+C++11 中提供以下4种语义的互斥量(mutex)：
+
+* std::mutex：独占的互斥量，不能递归使用
+* std::recursive_mutex：递归互斥量，不带超时功能
+
+* std::timed_mutex：带超时的独占互斥量，不能递归使用
+* std::recursive_timed_mutex：带超时的递归互斥量
+
+#### 递归锁std::recursive_mutex
+
+使用建议：
+
+ 	1. 递归锁的递归是有计数器，超过了计数器最大值会失败，抛异常
+ 	2. 比非递归锁效率低
+ 	3. 递归进入占用递归锁，使得代码逻辑不清晰，引发其他问题。
+
+​	因此，建议酌情使用。
+
+#### 超时互斥锁std::timed_mutex
+
+* 可以为锁的等待设置一个超时值，一旦超过可以做其他事情
+* timed_mutex比mutex主要是多了
+  * try_lock_for() 尝试锁定互斥，若互斥在指定的时限时期中不可用则返回
+  * try_lock_until() 尝试锁定互斥，直至抵达指定时间点互斥不可用则返回
+
+## 36.explicit构造函数关键字
+
+explicit：明确的，清楚的，不隐晦的，不含糊的。
+
+C++中的**explicit关键字**只能用于**修饰只有一个参数的类构造函数**，它的作用是表明该构造函数是显式的，而非隐式的，跟它相对应的另一个关键字是implicit，意思是隐藏的，类构造函数默认情况下即声明为implicit（隐式）
+
+隐含的意思是不会明确地告诉它要做什么，所以有点像自动，通过上下文知道意思
+
+C++允许编译器对代码执行一次隐式转换。
+
+**构造函数不加explicit关键字时：**
+
+```cpp
+#include <iostream>
+#include <string>
+
+class Entity
+{
+private:
+	std::string m_Name;
+	int m_Age;
+public:
+	Entity(const std::string& name)
+		: m_Name(name),m_Age(-1){}
+	
+	Entity(int age)
+		: m_Name("Unknown"),m_Age(age){}
+};
+
+void PrintEntity(const Entity& entity)
+{
+    // Printing
+}
+
+int main()
+{
+	Entity a1("Cherno");//ok
+	Entity b1(22);//ok
+    Entity a2 = Entity("Cherno");//ok
+	Entity b2 = Entity(22);//ok
+    Entity a3 = "Cherno";  //ok 做了一次隐式转换，相当于Entity a2 = Entity("Cherno");
+    Entity b3 = 22;   //ok 做了一次隐式转换，相当于Entity b2 = Entity(22);
+    PrintEntity(22);  //ok 做了一次隐式转换，相当于PrintEntity(Entity(22));
+    PrintEntity("Cherno"); //报错，需要做两次隐式转换，1.char[]类型的"Cherno"转换成std::string,2.在转换为Entity类型，由于C++只能做一次隐式转换所以报错
+    PrintEntity(std::string("Cherno")); //ok 做了一次隐式转换，相当于PrintEntity(Entity(std::string("Cherno"))); 
+    PrintEntity(Entity("Cherno")); //ok 做了一次隐式转换，相当于PrintEntity(Entity(std::string("Cherno"))); 
+	std::cin.get();
+}
+```
+
+**构造函数加explicit关键字时：**
+
+```cpp
+#include <iostream>
+#include <string>
+
+class Entity
+{
+private:
+	std::string m_Name;
+	int m_Age;
+public:
+	explicit Entity(const std::string& name)
+		: m_Name(name),m_Age(-1){}
+	
+	explicit Entity(int age)
+		: m_Name("Unknown"),m_Age(age){}
+};
+
+void PrintEntity(const Entity& entity)
+{
+    // Printing
+}
+
+int main()
+{
+	Entity a1("Cherno");//ok
+	Entity b1(22);//ok
+    Entity a2 = Entity("Cherno");  //ok
+	Entity b2 = Entity(22);//ok
+    Entity a3 = "Cherno";  //会报错，因为其Entity构造函数用explicit关键字禁止了隐式转换
+    Entity b3 = 22;   //会报错，因为Entity其构造函数用explicit关键字禁止了隐式转换
+    PrintEntity(22);  //会报错，因为Entity其构造函数用explicit关键字禁止了隐式转换
+    PrintEntity("Cherno"); //报错，需要做两次隐式转换，1.char[]类型的"Cherno"转换成std::string,2.在转换为Entity类型，由于C++只能做一次隐式转换所以报错
+    PrintEntity(std::string("Cherno")); //会报错，因为其构造函数用explicit关键字禁止了隐式转换
+    PrintEntity(Entity("Cherno")); //ok 做了一次std::string隐式转换，Entity没有做隐式转换所以不违反Entity 的explicit的关键字
+	std::cin.get();
+}
+```
+
+ 
