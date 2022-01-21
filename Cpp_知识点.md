@@ -734,4 +734,29 @@ int main()
 }
 ```
 
- 
+##  37 `virtual xxx() =0`纯虚方法
+
+**纯虚函数** 必须被子类实现，否则会编译报错。
+
+[参考链接：c++ virtual =0 纯虚方法](https://blog.csdn.net/qq_15267341/article/details/79359193)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
