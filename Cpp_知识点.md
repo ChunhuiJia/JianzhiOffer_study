@@ -1,3 +1,7 @@
+## C++学习参考资料
+
+1.[腾讯云：C++教程](https://cloud.tencent.com/developer/doc/1024) , 很多C++的标准库函数，应该是英文翻译过来的，还不错
+
 ## 1. C++传递数组给函数
 
   C++传递数组给函数，数组类型自动转换为指针类型，因而传的实际是地址，在函数内修改这个数组，在函数调用后这个数组也就被改变了。参考链接：[C++ 传递数组给函数](https://www.runoob.com/cplusplus/cpp-passing-arrays-to-functions.html)
@@ -734,29 +738,181 @@ int main()
 }
 ```
 
-##  37 `virtual xxx() =0`纯虚方法
+##  37. `virtual xxx() =0`纯虚方法
 
 **纯虚函数** 必须被子类实现，否则会编译报错。
 
 [参考链接：c++ virtual =0 纯虚方法](https://blog.csdn.net/qq_15267341/article/details/79359193)
 
+## 38.memset()方法
 
+```c++
+void *memset(void *str, int c, size_t n)
+```
 
+> 函数功能：把字符c复制n份**替换**到str所指向的**字符串的前n个字符**。
+>
+> 参数`str` -- 指向要填充的内存块
+>
+> 参数`c` -- 要被设置的值，该值以int形式传递，但是函数在添加内存块时是使用该值的无符号字符形式
+>
+> 参数`n` -- 要被设置为该之的字符数
 
+例子:
 
+```cpp
+#include <stdio.h>
+#include <string.h>
+ 
+int main ()
+{
+   char str[50];
+ 
+   strcpy(str,"This is string.h library function");
+   puts(str);
+ 
+   memset(str,'$',7);
+   puts(str);
+   
+   return(0);
+}
+```
 
+输出结果：
 
+> ```
+> This is string.h library function
+> $$$$$$$ string.h library function
+> ```
 
+参考链接：[C 库函数 - memset()](https://www.runoob.com/cprogramming/c-function-memset.html)
 
+## 39.零拷贝
 
+[参考文献：原来 8 张图，就可以搞懂「零拷贝」了](https://zhuanlan.zhihu.com/p/258513662)
 
+磁盘可以说是计算机系统最慢的硬件之一，读写速度相差内存 10 倍以上，所以针对优化磁盘的技术非常的多，比如零拷贝、直接 I/O、异步 I/O 等等，这些优化的目的就是为了提高系统的吞吐量，另外操作系统内核中的磁盘高速缓存区，可以有效的减少磁盘的访问次数。
 
+在前面我们知道了，传统的文件传输方式会历经 4 次数据拷贝，而且这里面，「从内核的读缓冲区拷贝到用户的缓冲区里，再从用户的缓冲区里拷贝到 socket 的缓冲区里」，这个过程是没有必要的。
 
+因为文件传输的应用场景中，在用户空间我们并不会对数据「再加工」，所以数据实际上可以不用搬运到用户空间，因此**用户的缓冲区是没有必要存在的**。
 
+![img](Cpp_知识点.assets/v2-dc405f1eb057217aee8820b6d3e340fd_720w.jpg)
 
+这就是所谓的**零拷贝（\*Zero-copy\*）技术，因为我们没有在内存层面去拷贝数据，也就是说全程没有通过 CPU 来搬运数据，所有的数据都是通过 DMA 来进行传输的。**
 
+## 40.Linux用户态和内核态
 
+[参考链接：用户态和内核态](https://www.cnblogs.com/maxigang/p/9041080.html)
 
+**内核态**：cpu可以访问内存的所有数据，包括外围设备，例如硬盘，网卡，cpu也可以将自己从一个程序切换到另一个程序。
+
+**用户态**：只能受限的访问内存，且不允许访问外围设备，占用cpu的能力被剥夺，cpu资源可以被其他程序获取。
+
+## 41.内核缓冲区和用户缓冲区
+
+[参考链接：底层原理，用户进程缓冲区和内核缓冲区](https://www.cnblogs.com/yc3110/p/10440613.html)
+
+**用户进程缓存区**：用户进程通过系统调用访问系统资源的时候，需要切换到内核态，而这对应一些特殊的堆栈和内存环境，必须在系统调用前建立好。而在系统调用结束后，cpu会从核心模式切回到用户模式，而堆栈又必须恢复成用户进程的上下文。
+
+**内核缓冲区**：当一个用户进程要从磁盘读取数据时，内核一般不直接读磁盘，而是将内核缓冲区中的数据复制到进程缓冲区中。
+
+我感觉是用户态情况下访问不到内核态的内存。
+
+## 42.上下文切换
+
+[参考链接：一文让你明白CPU上下文切换](https://zhuanlan.zhihu.com/p/52845869)
+
+**CPU 寄存器**和**程序计数器**就是 CPU 上下文，因为它们都是 CPU 在运行任何任务前，<u>必须的依赖环境</u>。
+
+- **CPU 寄存器**是 CPU 内置的容量小、但速度极快的内存。
+- **程序计数器**则是用来存储 CPU 正在执行的指令位置、或者即将执行的下一条指令位置。
+
+> **什么是 CPU 上下文切换**：
+>
+> 就是先**把前一个任务的 CPU 上下文（也就是 CPU 寄存器和程序计数器）保存起来**，**然后加载新任务的上下文到这些寄存器和程序计数器**，最后再**跳转到程序计数器所指的新位置，运行新任务**。
+>
+> 而这些**保存下来的上下文，会存储在系统内核中**，并**在任务重新调度执行时再次加载进**来。这样就能**保证任务原来的状态不受影响**，让任务看起来还是连续运行。
+
+**每次上下文切换**都需要**几十纳秒到数微秒的 CPU 时间**。这个时间还是相当可观的，特别是在进程上下文切换次数较多的情况下，很容易导致 CPU 将大量时间耗费在寄存器、内核栈以及虚拟内存等资源的保存和恢复上，进而大大缩短了真正运行进程的时间。这也正是导致平均负载升高的一个重要因素。
+
+## 43.进程和线程
+
+线程与进程最大的区别在于：**线程是调度的基本单位，而进程则是资源拥有的基本单位**。说白了，所谓内核中的任务调度，实际上的调度对象是线程；
+
+而**进程**只是给线程**提供了虚拟内存、全局变量等资源**。
+
+## 44.std::deque
+
+st::deque是双端队列，可以高效的在头尾两端插入和删除元素，双端队列提供了类似向量（std::vector）的功能，且不仅可以在容器末尾，还可以在容器开头高效地插入或删除元素。但是，相比向量，**双端队列不保证内部的元素是按连续的存储空间存储的**，因此，**不允许对指针直接做偏移操作来直接访问元素**。但是**deque支持快速的随机访问。**
+
+在内部，双端队列与向量的工作方式完全不同：向量使用单数组数据结构，在元素增加的过程中，需要偶尔的内存重分配，而双端队列中的元素被零散地保存在不同的存储块中，容器内部会保存一些必要的数据使得可以以恒定时间及一个统一的顺序接口直接访问任意元素。因此，双端队列的内部实现比向量的稍稍复杂一点，但这也使得它在一些特定环境下可以更高效地增长，特别是对于非常长的序列，内存重分配的代价是及其高昂的。
+对于大量涉及在除了起始或末尾以外的其它任意位置插入或删除元素的操作，相比列表（std::list）及正向列表（std::forward_list），deque 所表现出的性能是极差的，且操作前后的迭代器、引用的一致性较低。
+
+[参考链接：C++/C++11中std::deque的使用](https://blog.csdn.net/fengbingchun/article/details/72757856/)
+
+使用的方法和vector类似：
+
+```cpp
+deque <int> c1;
+c1.push_back(10);
+int& j = c1.at(1);
+int& i = c1.back();
+int& ii = c1.front();
+cout << "The size of the deque is initially " << c1.size() << endl;
+c1.clear();
+
+deque <int>::iterator v1_Iter;
+v1_Iter = v1.begin();
+deque <int>::const_reverse_iterator v1_rIter;
+v1_rIter = v1.crbegin();
+```
+
+**std::deque::resize**：调整容器大小以包含`count`个元素[参考链接：std::deque::resize](https://cloud.tencent.com/developer/section/1010052)
+
+```cpp
+void resize( size_type count );    //用法1
+void resize( size_type count, const value_type& value );  //用法2
+//count：void resize( size_type count );  
+//value：用来初始化新元素的值
+```
+
+如果当前size小于count，则1)附加默认插入的元素 2)附加拷贝值被添加(append)
+
+举例：
+
+```cpp
+#include <iostream>
+#include <deque>
+int main()
+{
+    std::deque<int> c = {1, 2, 3};
+    std::cout << "The deque holds: ";
+    for(auto& el: c) std::cout << el << ' ';
+    std::cout << '\n';
+    c.resize(5);
+    std::cout << "After resize up 5: ";
+    for(auto& el: c) std::cout << el << ' ';
+    std::cout << '\n';
+    c.resize(2);
+    std::cout << "After resize down to 2: ";
+    for(auto& el: c) std::cout << el << ' ';
+    std::cout << '\n';
+}
+/* 输出为：
+The deque holds: 1 2 3
+After resize up 5: 1 2 3 0 0
+After resize down to 2: 1 2
+*/
+```
+
+**std::deque::pop_front**：移除容器的第一个元素。[参考链接：std::deque::pop_front](https://cloud.tencent.com/developer/section/1010047)
+
+**std::deque::pop_back**：移除容器的最后一个元素 [参考链接：std::deque::pop_back](https://cloud.tencent.com/developer/section/1010046)
+
+**std::deque::push_front**：在容器头部插入元素 [参考链接：](https://blog.csdn.net/u014779536/article/details/111309384)
+
+**std::deque::push_back**：在容器末尾插入元素
 
 
 
