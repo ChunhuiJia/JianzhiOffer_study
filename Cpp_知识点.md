@@ -914,5 +914,101 @@ After resize down to 2: 1 2
 
 **std::deque::push_back**：在容器末尾插入元素
 
+## 45.CHECK()和CHECK_GT()
+
+
+
+## 46.lower_bound()和upper_bound()
+
+**lower_bound( begin,end,num)**：从数组的begin位置到end-1位置二分**查找第一个大于或等于num的数字**，找到返回该数字的地址，不存在则返回end。通过返回的地址减去起始地址begin,得到找到数字在数组中的下标。[参考链接：C++ lower_bound()函数用法详解](http://c.biancheng.net/view/7521.html)
+
+**upper_bound( begin,end,num)**：从数组的begin位置到end-1位置二分**查找第一个大于num的数字**，找到返回该数字的地址，不存在则返回end。通过返回的地址减去起始地址begin,得到找到数字在数组中的下标。[参考链接：C++ upper_bound()函数（精讲版）](http://c.biancheng.net/view/7527.html)
+
+## 47.std::fixed和std::setprecision(2)
+
+[参考链接：C++ fixed用法详解](http://c.biancheng.net/view/1341.html)
+流操作符`fixed`，表示浮点输出应该以固定点或小数点表示法显示，而不是通过科学计数法
+
+```cpp
+cout << 10.65486 << fixed << setprecision(2);
+//输出 10.65
+```
+
+## 48.common::math::Clamp
+
+没找到资料，是apollo内实现的函数，`modules/common/math/math_utils.h`
+
+```cpp
+template <typename T>
+T Clamp(const T value, T bound1, T bound2) {
+  if (bound1 > bound2) {
+    std::swap(bound1, bound2);
+  }
+
+  if (value < bound1) {
+    return bound1;
+  } else if (value > bound2) {
+    return bound2;
+  }
+  return value;
+}
+```
+
+
+
+## 49.hypot (cmath)
+
+c=hypot(a,b)，代表c=sqrt(a^2+b^2)
+
+## 50.`std::numeric_limits<double>::max();`
+
+是函数，返回编译器允许的double类型的数的最大值。
+
+[参考链接：numeric_limits<double>::max ()的用法](https://blog.csdn.net/qq_37554547/article/details/96852197)
+
+## 51.单例设计模式
+
+确保一个类只有一个实例，而且自行实例化并向整个系统提供这个示例。
+
+确保一个类只有一个实例，那就要求它的构造方法一定不能是public公开的，即不能被外界进行实例化，那它的构造方法只能是private。
+
+接着，它只有一个实例，这个实例属于当前类，即这个实例是当前类的类成员变量及类静态变量，我们知道类变量就是静态变量，即用static修饰。
+
+所以说上半句话，我们就可以想象出来，这种设计模式要求构造方法是private，并且拥有一个当前类的静态成员变量，后面它要求向整个系统提供这个实例，即我们要再提供一个静态的方法，向外界提供当前类的实例，当前实例只能在内部进行实例化，它不能放到外面去。
+
+单例模式的主要作用是确保一个类只有一个实例存在，比如说序列号生成器、Web页面的计数器等等都可以使用单例模式，同时如果创建某个对象需要消耗较多资源的话，比如访问IO，或者数据库资源的时候，我们也可以使用单例模式来减少资源的消耗。
+
+我们现在来看一下单例模式的实现：
+
+```java
+package interview.pattern;
+
+public class SingletonPattern {
+    public static void main(String[] args) {
+    }
+}
+
+class Singleton{
+    private static Singleton singleton;
+    private Singleton(){}
+    
+    public static Singleton getInstance(){
+        return null;
+    }
+}
+```
+
+对于一个实现了单例模式的类来说呢
+
+
+
+
+
+
+
+
+
+
+
 
 
