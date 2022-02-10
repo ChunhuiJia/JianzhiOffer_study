@@ -1,1 +1,1 @@
-/usr/bin/c++    -Wall -g   CMakeFiles/shellmad_34_2.dir/shellmad_thread/shellmad_34_2.cpp.o  -o shellmad_34_2 -rdynamic -lpthread 
+/usr/bin/c++   -Wall -g  -rdynamic CMakeFiles/shellmad_34_2.dir/shellmad_thread/shellmad_34_2.cpp.o  -o shellmad_34_2  -lpthread 

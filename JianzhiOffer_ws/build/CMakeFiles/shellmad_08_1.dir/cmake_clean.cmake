@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/shellmad_08_1.dir/shellmad_cast/shellmad_08_1.cpp.o"
-  "shellmad_08_1.pdb"
   "shellmad_08_1"
+  "shellmad_08_1.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

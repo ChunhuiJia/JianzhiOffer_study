@@ -1,1 +1,1 @@
-/usr/bin/c++    -Wall -g   CMakeFiles/shellmad_18_1.dir/smartPointers/shellmad_18_1.cpp.o  -o shellmad_18_1 -rdynamic 
+/usr/bin/c++   -Wall -g  -rdynamic CMakeFiles/shellmad_18_1.dir/smartPointers/shellmad_18_1.cpp.o  -o shellmad_18_1 

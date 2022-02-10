@@ -1,1 +1,1 @@
-/usr/bin/c++    -Wall -g   CMakeFiles/lesson7.dir/lesson7/lesson7.cpp.o CMakeFiles/lesson7.dir/Utilities/BinaryTree.cpp.o  -o lesson7 -rdynamic 
+/usr/bin/c++   -Wall -g  -rdynamic CMakeFiles/lesson7.dir/lesson7/lesson7.cpp.o CMakeFiles/lesson7.dir/Utilities/BinaryTree.cpp.o  -o lesson7 

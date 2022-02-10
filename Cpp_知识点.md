@@ -486,18 +486,24 @@ C++引入了四种功能不同的强制类型转换运算符以进行强制类�
 
 ## 32.const
 
-```
+```c++
 const int* p;  //const放在前面代表指针指向的内容不能发生改变
 *p = 123;  // 修改指针指向的内容会报错
 ```
 
 
 
-```
+```cpp
 int n = 5;
 int* const p = &n;  //const放在后面代表指针本身不能发生改变
 p = 0x123;          //修改指针地址会报错
 ```
+
+```c++
+int GetNumber() const;  //决定了在该成员函数中，任意修改它所在的类的成员的操作都是不允许的，因为隐含了对this指针的const引用。
+```
+
+
 
 ## 33.字符的双引号和单引号
 
@@ -968,6 +974,8 @@ c=hypot(a,b)，代表c=sqrt(a^2+b^2)
 
 ## 51.单例设计模式
 
+[参考链接：五分钟学设计模式.01.单例模式](https://www.bilibili.com/video/BV1af4y1y7sS?from=search&seid=15082392538170520370&spm_id_from=333.337.0.0)
+
 确保一个类只有一个实例，而且自行实例化并向整个系统提供这个示例。
 
 确保一个类只有一个实例，那就要求它的构造方法一定不能是public公开的，即不能被外界进行实例化，那它的构造方法只能是private。
@@ -998,15 +1006,95 @@ class Singleton{
 }
 ```
 
-对于一个实现了单例模式的类来说呢
+对于一个实现了单例模式的类来说呢，它首先构造方法必须是私有的，即Private，接着，它拥有一个唯一的实例，即它的类变量，静态变量，用static修饰的，但是我们singleton在什么时候进行实例化呢，可以看到它刚开始是空的，根据实例化实际不同，单例模式可以分为两种，饿汉式和懒汉式。
 
+饿汉式，即在类加载的时候就进行实例化，返回时返回这个实例化对象
 
+```cpp
+package interview.pattern;
 
+public class SingletonPattern {
+    public static void main(String[] args) {
+    }
+}
 
+class Singleton{
+    private static Singleton singleton = new Singleton();  //饿汉式，1.类加载的时候就进行实例化
+    private Singleton(){}
+    
+    public static Singleton getInstance(){
+        return singleton;    //2.返回时返回这个实例化对象
+    }
+}
+```
 
+懒汉式，在刚开始，即类加载的时候不进行实例化，在第一次使用的时候再进行实例化
 
+```cpp
+package interview.pattern;
 
+public class SingletonPattern {
+    public static void main(String[] args) {
+    }
+}
 
+class Singleton{
+    private static Singleton singleton;
+    private Singleton(){}
+    
+    public static Singleton getInstance(){
+        if(singleton == nullptr)
+        {
+            singleton = new Singleton();  //在第一次调用，即getInstance()方法的时候才进行实例化
+        }
+        return singleton;
+    }
+}
+```
+
+## 52.静态成员变量 static
+
+1.静态数据成员的定义和调用
+
+2.静态数据成员的本质
+
+3.使用静态成员的好处
+
+​    // 静态成员变量
+
+​    // （1） 要单独的把实现写在类外(.cpp中)
+
+​    // （2） 默认会用0对该成员进行初始化
+
+​    // （3） 静态成员变量是同一个类的不同对象共用的，所以不占用类的内存大小
+
+​    // （4） 本质：带类域的全局变量
+
+[参考链接：shellmad-c++_42 静态成员变量 ](https://www.bilibili.com/video/BV1hV411d7JB?spm_id_from=333.999.0.0)  [代码](JianzhiOffer_ws/shellmad_static/shellmad_42_1.cpp)
+
+## 53.声明和定义
+
+声明，是告诉编译器一些信息，以协助编译器进行语法分析，避免编译器报错。
+
+定义，是告诉编译器生成一些代码，并且这些代码由连接器使用，在运行时分配内存
+
+**编译器编译程序时，只会一个一个源文件编译，并分别生成相应的中间文件（对VC就是.obj文件），然后再由连接器统一将所有的中间文件连接形成一个可执行文件。**
+
+[参考链接：C++函数和变量的声明、定义的原因和作用](https://blog.csdn.net/luyumiao1990/article/details/23944373)
+
+## 54.静态成员函数
+
+[参考链接：shellmad-c++_43 静态成员函数](https://www.bilibili.com/video/BV1EZ4y1p7q5?spm_id_from=333.999.0.0)   [代码](JianzhiOffer_ws/shellmad_static/shellmad_43_1.cpp)
+
+​    // 静态成员函数
+
+​    // （1） 在头文件的函数名前面加上关键字static
+
+​    // （2） 函数内部不能够访问非静态成员变量，只能访问静态成员变量
+
+​    // （3） 本质：静态成员函数中是没有this指针
+
+​    // （4） 静态成员函数实际上就是带类域的全局函数
 
 
 

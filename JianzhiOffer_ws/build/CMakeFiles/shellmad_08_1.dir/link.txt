@@ -1,1 +1,1 @@
-/usr/bin/c++    -Wall -g   CMakeFiles/shellmad_08_1.dir/shellmad_cast/shellmad_08_1.cpp.o  -o shellmad_08_1 -rdynamic 
+/usr/bin/c++   -Wall -g  -rdynamic CMakeFiles/shellmad_08_1.dir/shellmad_cast/shellmad_08_1.cpp.o  -o shellmad_08_1 

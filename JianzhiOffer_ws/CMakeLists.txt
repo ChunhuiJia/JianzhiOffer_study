@@ -53,6 +53,10 @@ target_link_libraries(shellmad_34_1 pthread)
 add_executable(shellmad_34_2 shellmad_thread/shellmad_34_2.cpp)
 target_link_libraries(shellmad_34_2 pthread)
 
+add_executable(shellmad_42_1 shellmad_static/shellmad_42_1.cpp)
+add_executable(shellmad_43_1 shellmad_static/shellmad_43_1.cpp)
+add_executable(shellmad_44_1 shellmad_static/shellmad_44_1.cpp)
+
 
 
 

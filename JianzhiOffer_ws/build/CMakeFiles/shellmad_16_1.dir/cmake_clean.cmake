@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/shellmad_16_1.dir/smartPointers/shellmad_16_1.cpp.o"
-  "shellmad_16_1.pdb"
   "shellmad_16_1"
+  "shellmad_16_1.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
