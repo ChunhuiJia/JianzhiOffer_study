@@ -1096,7 +1096,57 @@ class Singleton{
 
 ​    // （4） 静态成员函数实际上就是带类域的全局函数
 
+## 55.strftime()函数
 
+[参考链接：C++中strftime()的详细说明](https://blog.csdn.net/clarkness/article/details/90047406)
 
+strftime()函数将时间格式化为我们想要的格式
 
+```cpp
+time_t rawtime;  //1.time_t这种类型是存储从1970年1月1日 到现在经过了多少秒
+char name_buffer[80];
+std::time(&rawtime);  //2.获得time_t类型的“当前时间”
+std::tm time_tm;   //3.定义一个tm结构体的时间变量
+localtime_r(&rawtime, &time_tm);  //4.把time_t类型的时间转换成tm结构的时间格式
+strftime(name_buffer, 80, "/tmp/speed_log__%F_%H%M%S.csv", &time_tm);  //5.把time_tm的时间转换成格式化的字符
+//%F 年-月-日   %H 24小时制的小时  %M 十时制表示的分钟数   %S 十进制的秒数
+```
 
+[参考链接：c++ 时间类型详解 time_t](https://blog.csdn.net/love_gaohz/article/details/6637625)
+
+其中std::tm结构体：
+
+```cpp
+struct tm
+{
+    int tm_sec;  /*秒，正常范围0-59， 但允许至61*/
+    int tm_min;  /*分钟，0-59*/
+    int tm_hour; /*小时， 0-23*/
+    int tm_mday; /*日，即一个月中的第几天，1-31*/
+    int tm_mon;  /*月， 从一月算起，0-11*/  1+p->tm_mon;
+    int tm_year;  /*年， 从1900至今已经多少年*/  1900＋ p->tm_year;
+    int tm_wday; /*星期，一周中的第几天， 从星期日算起，0-6*/
+    int tm_yday; /*从今年1月1日到目前的天数，范围0-365*/
+    int tm_isdst; /*日光节约时间的旗标*/
+};
+/*————————————————
+版权声明：本文为CSDN博主「helmsgao」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/love_gaohz/article/details/6637625*/
+```
+
+> `local_time_r()`:通过time_t格式的时间转换成tm格式的时间结构，运行在linux平台下,
+>
+> 函数原型为struct tm *localtime_r(const time_t *timep, struct tm *result);  
+>
+> `local_time_s()`:用来获取系统时间，运行在windows平台下
+>
+> [参考链接：localtime、localtime_s、localtime_r的使用](https://blog.csdn.net/u010087712/article/details/50731222)
+
+## 56.size_t
+
+[参考链接：【C/C++】size_t详解](https://blog.csdn.net/qq_34018840/article/details/100884317)
+
+使用size_t可能会提高代码的可移植性、有效性或者可读性，或许同时提高这三者。
+
+size_t是标准C库中定义的，它是一个基本的与机器相关的**无符号整数**的C/C + +类型， 它是sizeof操作符返回的结果类型，该类型的大小可选择。其大小足以保证存储内存中对象的大小（简单理解为 unsigned int就可以了，64位系统中为 long unsigned int）。通常用sizeof(XX)操作，这个操作所得到的结果就是size_t类型。
+（可以理解size_t是和操作系统的位数是相关的，如果是32位系统，那么size_t的表示范围是0～2^32，如果是64位系统，那么size_t的表示范围是0～2^64）
