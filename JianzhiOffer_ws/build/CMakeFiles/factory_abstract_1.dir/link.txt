@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -g   CMakeFiles/factory_abstract_1.dir/design_factory/factory_abstract_1.cpp.o  -o factory_abstract_1 -rdynamic 

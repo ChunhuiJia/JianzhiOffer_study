@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -g   CMakeFiles/factory_simple_2.dir/design_factory/factory_simple_2.cpp.o  -o factory_simple_2 -rdynamic 

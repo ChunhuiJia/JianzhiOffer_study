@@ -57,6 +57,18 @@ add_executable(shellmad_42_1 shellmad_static/shellmad_42_1.cpp)
 add_executable(shellmad_43_1 shellmad_static/shellmad_43_1.cpp)
 add_executable(shellmad_44_1 shellmad_static/shellmad_44_1.cpp)
 
+add_executable(factory design_factory/Factor.cpp)
+add_executable(factory_simple_1 design_factory/factory_simple_1.cpp)
+add_executable(factory_simple_2 design_factory/factory_simple_2.cpp)
+add_executable(factory_abstract_1 design_factory/factory_abstract_1.cpp)
+add_executable(factory_advanced design_factory/factory_advanced/main.cpp 
+design_factory/factory_advanced/Document1Factory.cpp
+design_factory/factory_advanced/DocumentFactory.cpp
+design_factory/factory_advanced/HtmlDocument.cpp
+design_factory/factory_advanced/PDFDocument.cpp
+design_factory/factory_advanced/TxtDocument.cpp)
+add_executable(state design_state/state.cpp)
+
 
 
 

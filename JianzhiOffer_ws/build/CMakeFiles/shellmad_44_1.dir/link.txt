@@ -1,1 +1,1 @@
-/usr/bin/c++   -Wall -g  -rdynamic CMakeFiles/shellmad_44_1.dir/shellmad_static/shellmad_44_1.cpp.o  -o shellmad_44_1 
+/usr/bin/c++    -Wall -g   CMakeFiles/shellmad_44_1.dir/shellmad_static/shellmad_44_1.cpp.o  -o shellmad_44_1 -rdynamic 

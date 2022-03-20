@@ -331,7 +331,7 @@ int main()
 }
 ```
 
-> .get()函数
+> .get()函数，智能指针本质是个类，通过get()函数可以得到这个智能指针指向的对象的指针
 
 [参考链接: c++——智能指针学习（unique_ptr）](https://blog.csdn.net/weixin_30892763/article/details/97764534)
 
@@ -966,6 +966,8 @@ T Clamp(const T value, T bound1, T bound2) {
 
 c=hypot(a,b)，代表c=sqrt(a^2+b^2)
 
+
+
 ## 50.`std::numeric_limits<double>::max();`
 
 是函数，返回编译器允许的double类型的数的最大值。
@@ -1150,3 +1152,122 @@ struct tm
 
 size_t是标准C库中定义的，它是一个基本的与机器相关的**无符号整数**的C/C + +类型， 它是sizeof操作符返回的结果类型，该类型的大小可选择。其大小足以保证存储内存中对象的大小（简单理解为 unsigned int就可以了，64位系统中为 long unsigned int）。通常用sizeof(XX)操作，这个操作所得到的结果就是size_t类型。
 （可以理解size_t是和操作系统的位数是相关的，如果是32位系统，那么size_t的表示范围是0～2^32，如果是64位系统，那么size_t的表示范围是0～2^64）
+
+## 57.设计模式-工厂模式
+
+[参考链接：C++设计模式-工厂方法](https://bilibili.com/video/BV1rb4y1x7Vt/?spm_id_from=333.788)
+
+代码在文件夹里
+
+
+
+[推荐：bilibili工厂三兄弟，设计模式入门复习](https://bilibili.com/video/BV1tV41147PT?p=1)
+
+简单工厂模式 + “开闭原则” = 工厂方法模式
+
+工厂方法模式 + “产品族” = 抽象工厂方法模式
+
+代码在文件夹里
+
+
+
+[这个的代码比较有水平，有点难，学习学习：C++工厂](https://bilibili.com/video/BV1uh411R71Y?spm_id_from=333.337.search-card.all.click)
+
+## 58.设计模式-状态模式
+
+[参考链接：C++设计模式-状态模式](https://bilibili.com/video/BV1FS4y1D7dK/?spm_id_from=333.788)
+
+## 59.make_shared函数
+
+make_shared是标准的库函数，此函数在动态内存中分配一个对象并初始化它，返回指向此对象的shared_ptr。
+
+## 60.boost::function
+
+[推荐：boost::function的用法](https://cnblogs.com/xieweikai/p/6817665.html)
+
+boot::function就是一个函数的包装器（function wrapper），用来定义函数对象。
+
+Boost.Function库包含了一个类族的函数对象的包装。它的概念很像广义上的回调函数。其有着和函数指针相同的特性但是又包含了一个调用的接口。一个函数指针能够在一个地方被调用或者作为一个回调函数。boost.function能够代替函数指针并提供更大的灵活性。
+
+#### 60.1普通函数
+
+```cpp
+void do_sum(int *values, int n)
+{
+	int sum(0);
+	for(int i=0;i<n;++i)
+	{
+		sum += values[i];
+	}
+	cout << sum << endl;
+}
+
+int main(int argc, char* argv[])
+{
+    boost::function<void(int *values,int n)> sum;
+    sum = &do_sum;
+    int a[] = {1,2,3,4,5};
+    sum(a,5);
+    return 0;
+}
+```
+
+sum可以理解为一个广义的函数对象了，其作用就是保存函数do_sum()，然后再调用之。
+
+#### 60.2成员函数
+
+```cpp
+class X{
+public:
+	int foo(int a)
+	{
+		cout << a << endll
+		return a;
+	}
+};
+int main(int argc, char* argv[])
+{
+	boost::function<int(X*,int)> f;
+	f = &X::foo;
+	X x;
+	f(&X,5);
+	return 0;
+}
+```
+
+我们发现，对类的成员函数的对象化从语法上是没有多大的区别。
+
+#### 60.3一个典型的例子
+
+上面的几个例子没有体现出boost::function的作用来，这里在写一个例子。比如当程序执行到某一处的时候想绑定某一个函数，但是不想立即执行，我们就可以声明一个函数对象，给此对象绑定相应的函数，做一些其他事情，然后再来执行绑定的函数，代码如下：
+
+```cpp
+void print(int a){
+	cout << a << endl;
+}
+typedef boost::function<void(int)> SuccessPrint;
+int main(int argc,char* argv[])
+{
+    vector<SuccessPrint> printList;
+    SuccessPrint printOne = boost::bind(print,_1);
+    printList.push_back(printOne);
+    SuccessPrint printTwo = boost::bind(print,_1);
+    printList.push_back(printTwo);
+    SuccessPrint printThree = boost::bind(print,_1);
+    printList.push_back(printThree);
+    
+    //do something else
+    for(int i=0;i<printList.size();++i)
+    {
+        printList.at(i)(i);
+    }
+    return 0;
+}
+```
+
+上述代码中首先把声明一个函数对象typedef boost::function<void(int)> SuccessPrint, 然后把print绑定到函数对象中，放入vector中，到最后才来执行这个print()函数
+
+## 61.boost::bind
+
+
+

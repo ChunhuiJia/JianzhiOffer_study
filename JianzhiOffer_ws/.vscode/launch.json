@@ -8,7 +8,7 @@
             "name": "g++ - 生成和调试活动文件",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/shellmad_44_1",
+            "program": "${workspaceFolder}/build/factory_advanced",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

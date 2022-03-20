@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -g   CMakeFiles/state.dir/design_state/state.cpp.o  -o state -rdynamic 
